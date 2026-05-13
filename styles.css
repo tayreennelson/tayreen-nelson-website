@@ -45,7 +45,7 @@ img { max-width: 100%; display: block; }
   background: rgba(0,0,0,.78); color: white; backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
-.brand, .site-header nav a { text-transform: uppercase; letter-spacing: .22em; font-size: 12px; font-weight: 400; }
+.brand, .site-header nav a { text-transform: uppercase; letter-spacing: .22em; font-size: 13px; font-weight: 400; }
 .brand span { opacity: .45; }
 .site-header nav { display: flex; gap: 26px; color: rgba(255,255,255,.76); }
 .site-header nav a:hover { color: white; }
@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url("images/tayreen-hero.jpg") 68% center/cover no-repeat;
+  background: url("images/tayreen-hero.jpg") 74% center/cover no-repeat;
   transform: scale(1.01);
 }
 .hero-overlay {
@@ -71,14 +71,14 @@ img { max-width: 100%; display: block; }
 .eyebrow { text-transform: uppercase; letter-spacing: .34em; font-size: 12px; color: rgba(255,255,255,.72); font-weight: 400; }
 .eyebrow.blue { color: var(--ocean); }
 h1, h2 { text-transform: uppercase; letter-spacing: .075em; font-weight: 300; line-height: 1.02; margin: 0; }
-h1 { font-size: clamp(40px, 5.4vw, 76px); max-width: 880px; }
+h1 { font-size: clamp(34px, 4.4vw, 62px); max-width: 880px; }
 h2 { font-size: clamp(34px, 4.7vw, 64px); margin-top: 18px; }
-.hero-copy { max-width: 720px; font-size: 19px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
+.hero-copy { max-width: 560px; font-size: 19px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
 .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 34px; }
 .btn-primary, .btn-secondary { border-radius: 999px; padding: 15px 22px; text-transform: uppercase; letter-spacing: .16em; font-weight: 500; font-size: 12px; display: inline-block; }
 .btn-primary { background: white; color: black; }
 .btn-secondary { border: 1px solid rgba(255,255,255,.38); color: white; }
-.hero-card { border: 1px solid rgba(255,255,255,.16); background: rgba(0,0,0,.32); padding: 30px; border-radius: 30px; backdrop-filter: blur(16px); max-width: 560px; justify-self: end; }
+.hero-card { border: 1px solid rgba(255,255,255,.16); background: rgba(0,0,0,.32); padding: 24px; border-radius: 30px; backdrop-filter: blur(16px); max-width: 500px; justify-self: end; }
 .card-title { color: rgba(255,255,255,.82); text-transform: uppercase; letter-spacing: .26em; font-size: 13px; margin: 0 0 22px; }
 .hero-card ul { padding-left: 18px; margin-bottom: 0; line-height: 1.68; font-size: 16px; color: rgba(255,255,255,.92); }
 .hero-card li { margin-bottom: 10px; }
