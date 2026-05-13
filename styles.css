@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Compass Sans';
+  src: url('assets/fonts/CompassSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Compass Sans';
+  src: url('assets/fonts/CompassSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Compass Sans';
+  src: url('assets/fonts/CompassSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Compass Sans';
+  src: url('assets/fonts/CompassSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 :root {
   --ocean: #034A7D;
   --deep: #031826;
@@ -10,7 +33,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff; }
+body { margin: 0; font-family: 'Compass Sans', 'Helvetica Neue', Arial, sans-serif; color: #111; background: #fff; font-weight: 300; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
@@ -46,7 +69,7 @@ img { max-width: 100%; display: block; }
 .eyebrow { text-transform: uppercase; letter-spacing: .32em; font-size: 12px; color: rgba(255,255,255,.72); }
 .eyebrow.blue { color: var(--ocean); }
 h1, h2 { text-transform: uppercase; letter-spacing: .075em; font-weight: 300; line-height: .98; margin: 0; }
-h1 { font-size: clamp(48px, 7vw, 98px); max-width: 980px; }
+h1 { font-size: clamp(40px, 5.6vw, 78px); max-width: 880px; }
 h2 { font-size: clamp(36px, 5vw, 68px); margin-top: 18px; }
 .subhead { max-width: 760px; font-size: 20px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
 .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 34px; }
