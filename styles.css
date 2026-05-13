@@ -1,93 +1,109 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background: #f8f8f8;
+:root {
+  --ocean: #034A7D;
+  --deep: #031826;
+  --black: #000;
+  --white: #fff;
+  --warm: #f6f3ef;
+  --line: rgba(0,0,0,.12);
+  --muted: #666;
 }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 34px;
+  background: rgba(0,0,0,.78); color: white; backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.brand, .topbar nav a, .top-cta { text-transform: uppercase; letter-spacing: .22em; font-size: 12px; }
+.topbar nav { display: flex; gap: 26px; color: rgba(255,255,255,.76); }
+.topbar nav a:hover { color: white; }
+.top-cta { border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 10px 16px; }
 
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh; position: relative; overflow: hidden; color: white;
+  padding: 110px 6vw 70px; display: flex; align-items: center;
 }
-
-.overlay {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url("images/tayreen-hero.jpg") center/cover no-repeat;
+  transform: scale(1.02);
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 60px;
-  color: white;
+.hero-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.48) 46%, rgba(3,74,125,.46)), radial-gradient(circle at 20% 10%, rgba(3,74,125,.55), transparent 34%);
 }
-
-.nav-btn {
-  background: white;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+.hero-inner {
+  position: relative; z-index: 2; width: 100%; max-width: 1280px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.05fr .72fr; gap: 60px; align-items: end;
 }
+.eyebrow { text-transform: uppercase; letter-spacing: .32em; font-size: 12px; color: rgba(255,255,255,.72); }
+.eyebrow.blue { color: var(--ocean); }
+h1, h2 { text-transform: uppercase; letter-spacing: .075em; font-weight: 300; line-height: .98; margin: 0; }
+h1 { font-size: clamp(48px, 7vw, 98px); max-width: 980px; }
+h2 { font-size: clamp(36px, 5vw, 68px); margin-top: 18px; }
+.subhead { max-width: 760px; font-size: 20px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 34px; }
+.btn { border-radius: 999px; padding: 16px 24px; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; font-size: 12px; }
+.btn.light { background: white; color: black; }
+.btn.outline { border: 1px solid rgba(255,255,255,.38); color: white; }
+.credential-card { border: 1px solid rgba(255,255,255,.16); background: rgba(0,0,0,.38); padding: 36px; border-radius: 34px; backdrop-filter: blur(16px); }
+.credential-card ul { padding-left: 18px; line-height: 2; font-size: 17px; color: rgba(255,255,255,.9); }
 
-.hero-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 60px;
-  max-width: 800px;
-  color: white;
-}
+.logo-strip { display: flex; justify-content: center; align-items: center; padding: 26px 24px; background: white; border-bottom: 1px solid #eee; }
+.logo-strip img { max-height: 52px; width: auto; }
 
-.hero-content h2 {
-  font-size: 56px;
-  margin-bottom: 20px;
-}
+.section { max-width: 1240px; margin: 0 auto; padding: 92px 28px; }
+.intro-grid, .image-text, .contact-section { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: center; }
+.text-block p, .section p, .property-feature p, .contact-section p { font-size: 18px; line-height: 1.75; color: #555; }
+.portrait-wrap { border-radius: 34px; overflow: hidden; box-shadow: 0 22px 60px rgba(0,0,0,.16); }
+.portrait-wrap img { width: 100%; height: 680px; object-fit: cover; object-position: top center; }
 
-.hero-content p {
-  font-size: 22px;
-  line-height: 1.6;
-}
+.blue-feature { position: relative; overflow: hidden; min-height: 520px; background: #020b12; color: white; display: flex; align-items: center; }
+.texture { position: absolute; inset: 0; background: linear-gradient(rgba(3,74,125,.55), rgba(0,0,0,.68)), url("images/ocean-texture.jpg") center/cover no-repeat; opacity: .95; }
+.blue-inner { position: relative; max-width: 1000px; margin: 0 auto; padding: 90px 28px; text-align: center; }
+.blue-inner p { color: rgba(255,255,255,.82); font-size: 20px; line-height: 1.7; }
 
-.buttons {
-  margin-top: 30px;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
+.strategy-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.strategy-cards article, .sales-grid article, .reviews-grid article, form { border: 1px solid #e7e7e7; border-radius: 28px; padding: 30px; background: white; box-shadow: 0 18px 45px rgba(0,0,0,.06); }
+.strategy-cards span { color: var(--ocean); font-size: 13px; letter-spacing: .18em; }
+.strategy-cards h3, .sales-grid h3 { text-transform: uppercase; letter-spacing: .12em; font-size: 17px; }
 
-.btn {
-  padding: 14px 24px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
+.market-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 46px; }
+.market-grid div { min-height: 190px; background: linear-gradient(135deg, var(--ocean), #06263d); color: white; border-radius: 28px; padding: 28px; display: flex; align-items: flex-end; text-transform: uppercase; letter-spacing: .12em; font-size: 21px; }
 
-.primary {
-  background: #d4af37;
-  color: black;
-}
+.property-feature { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; max-width: 1320px; margin: 0 auto; padding: 92px 28px; }
+.property-feature img { height: 560px; width: 100%; object-fit: cover; border-radius: 34px; box-shadow: 0 22px 70px rgba(0,0,0,.16); }
 
-.secondary {
-  background: white;
-  color: black;
-}
+.warm { max-width: none; background: var(--warm); padding-left: max(28px, calc((100vw - 1240px) / 2)); padding-right: max(28px, calc((100vw - 1240px) / 2)); }
+.sales-grid, .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 46px; }
+.sales-grid strong { font-size: 42px; font-weight: 300; color: var(--ocean); }
+.stars { color: var(--ocean); letter-spacing: .08em; margin-bottom: 16px; }
+.reviews-grid p { color: #333; }
+.reviews-grid span { display: block; margin-top: 22px; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: #555; }
+.contact-section { align-items: start; }
+.contact-info { display: grid; gap: 12px; margin: 28px 0; color: #444; }
+.socials { display: flex; flex-wrap: wrap; gap: 12px; }
+.socials a { border: 1px solid #d0d0d0; border-radius: 999px; padding: 10px 14px; font-size: 13px; text-transform: uppercase; letter-spacing: .14em; }
+form { display: grid; gap: 14px; }
+input, select, textarea { width: 100%; border: 1px solid #ddd; border-radius: 14px; padding: 15px 16px; font-size: 16px; font-family: inherit; }
+button { border: 0; border-radius: 999px; padding: 16px 22px; background: var(--ocean); color: white; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; cursor: pointer; }
+footer { background: #000; color: white; padding: 48px 6vw; }
+footer p { text-transform: uppercase; letter-spacing: .24em; font-size: 13px; }
+footer small { display: block; max-width: 900px; color: rgba(255,255,255,.6); line-height: 1.7; }
 
-.about,
-.contact {
-  padding: 80px 60px;
-  background: white;
-  text-align: center;
-}
-
-.about h3,
-.contact h3 {
-  font-size: 36px;
+@media (max-width: 980px) {
+  .topbar nav { display: none; }
+  .top-cta { display: none; }
+  .hero-inner, .intro-grid, .image-text, .property-feature, .contact-section { grid-template-columns: 1fr; }
+  .strategy-cards, .sales-grid, .reviews-grid, .market-grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 100px; }
+  .credential-card { margin-top: 20px; }
+  .portrait-wrap img, .property-feature img { height: auto; }
 }
