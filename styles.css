@@ -62,7 +62,13 @@ img { max-width: 100%; display: block; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,.86), rgba(0,0,0,.58) 43%, rgba(3,74,125,.33)), radial-gradient(circle at 18% 12%, rgba(3,74,125,.45), transparent 34%);
+  background: linear-gradient(
+  90deg,
+  rgba(0,0,0,.72),
+  rgba(0,0,0,.44) 43%,
+  rgba(3,74,125,.24)
+),
+radial-gradient(circle at 18% 12%, rgba(3,74,125,.35), transparent 34%);
 }
 .hero-inner {
   position: relative; z-index: 2; width: 100%; max-width: 1320px; margin: 0 auto;
@@ -71,17 +77,42 @@ img { max-width: 100%; display: block; }
 .eyebrow { text-transform: uppercase; letter-spacing: .34em; font-size: 12px; color: rgba(255,255,255,.72); font-weight: 400; }
 .eyebrow.blue { color: var(--ocean); }
 h1, h2 { text-transform: uppercase; letter-spacing: .075em; font-weight: 300; line-height: 1.02; margin: 0; }
-h1 { font-size: clamp(34px, 4.4vw, 62px); max-width: 880px; }
+h1 { font-size: clamp(30px, 4vw, 56px); max-width: 620px; line-height: .96; }
 h2 { font-size: clamp(34px, 4.7vw, 64px); margin-top: 18px; }
-.hero-copy { max-width: 560px; font-size: 19px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
+.hero-copy { max-width: 520px; font-size: 19px; line-height: 1.7; color: rgba(255,255,255,.88); margin-top: 26px; }
 .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 34px; }
 .btn-primary, .btn-secondary { border-radius: 999px; padding: 15px 22px; text-transform: uppercase; letter-spacing: .16em; font-weight: 500; font-size: 12px; display: inline-block; }
 .btn-primary { background: white; color: black; }
 .btn-secondary { border: 1px solid rgba(255,255,255,.38); color: white; }
-.hero-card { border: 1px solid rgba(255,255,255,.16); background: rgba(0,0,0,.32); padding: 24px; border-radius: 30px; backdrop-filter: blur(16px); max-width: 500px; justify-self: end; }
-.card-title { color: rgba(255,255,255,.82); text-transform: uppercase; letter-spacing: .26em; font-size: 13px; margin: 0 0 22px; }
-.hero-card ul { padding-left: 18px; margin-bottom: 0; line-height: 1.68; font-size: 16px; color: rgba(255,255,255,.92); }
-.hero-card li { margin-bottom: 10px; }
+.hero-card {
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.28);
+  padding: 24px 26px;
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+  max-width: 500px;
+  justify-self: end;
+}
+
+.card-title {
+  color: rgba(255,255,255,.82);
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+.hero-card ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+  line-height: 1.58;
+  font-size: 15.5px;
+  color: rgba(255,255,255,.92);
+}
+
+.hero-card li {
+  margin-bottom: 9px;
+}
 
 .logo-strip { display: flex; justify-content: center; align-items: center; padding: 26px 24px; background: white; border-bottom: 1px solid #eee; }
 .logo-strip img { max-height: 52px; width: auto; }
