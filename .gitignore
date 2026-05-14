@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build / cache
+node_modules/
+.vercel/
+
+# Large legacy / unreferenced source images
+# These remain on disk but are excluded from version control to keep the
+# Vercel build small. Re-include any of these if you start using them
+# in index.html or styles.css.
+images/PalmFronds-3.jpg
+images/Rope.jpg
+images/Window-5.jpg
+images/ocean-texture.jpg
+images/1701MIcanopypoolwithpak.jpg
+images/rsg-compass-logo1.png
+images/rsg-compass-black.jpg
+images/peacock.jpg
+images/beach.jpg
