@@ -29,36 +29,31 @@
   <link rel="stylesheet" href="/styles.css" />
 
   <style>
-    /* Neighborhood guide page styles */
+    /* Neighborhood guide page styles — light hero matching homepage */
     .nb-hero {
-      background: var(--ocean-ink);
-      color: white;
-      padding: clamp(120px, 16vh, 180px) clamp(20px, 4vw, 56px) clamp(64px, 9vh, 100px);
+      background: var(--paper);
+      color: var(--ink);
+      padding: clamp(120px, 16vh, 180px) clamp(20px, 4vw, 56px) clamp(48px, 7vh, 80px);
       position: relative;
       overflow: hidden;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid var(--line-soft);
     }
-    .nb-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 30%, rgba(3,74,125,0.4) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(3,74,125,0.25) 0%, transparent 50%);
-      pointer-events: none;
-    }
-    .nb-hero-inner { max-width: var(--content-max); margin: 0 auto; position: relative; z-index: 1; }
-    .nb-breadcrumb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.28em; color: rgba(255,255,255,0.55); margin-bottom: 28px; }
-    .nb-breadcrumb a { color: rgba(255,255,255,0.78); border-bottom: 1px solid transparent; transition: border-color .2s var(--easing); }
-    .nb-breadcrumb a:hover { border-bottom-color: rgba(255,255,255,0.78); }
-    .nb-breadcrumb-sep { margin: 0 12px; opacity: 0.4; }
-    .nb-hero .eyebrow { color: rgba(255,255,255,0.7); margin-bottom: 18px; }
-    .nb-hero .eyebrow::before { background: rgba(255,255,255,0.7); }
-    .nb-hero h1 { color: white; font-size: clamp(42px, 6vw, 88px); margin: 0; line-height: 1.02; max-width: 1000px; }
-    .nb-hero h1 em { color: rgba(255,255,255,0.7); }
-    .nb-hero-lede { margin-top: 32px; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.7; color: rgba(255,255,255,0.82); max-width: 760px; font-weight: 300; }
-    .nb-hero-tags { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
-    .nb-hero-tags span { font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(255,255,255,0.78); padding: 8px 14px; border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; font-weight: 500; }
+    .nb-hero-inner { max-width: var(--content-max); margin: 0 auto; position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+    .nb-hero-text { min-width: 0; }
+    .nb-hero-img { position: relative; }
+    .nb-hero-img img { width: 100%; height: auto; max-height: 520px; object-fit: cover; border-radius: 2px; display: block; }
+    @media (max-width: 900px) { .nb-hero-inner { grid-template-columns: 1fr; } .nb-hero-img img { max-height: 360px; } }
+    .nb-breadcrumb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.28em; color: var(--muted); margin-bottom: 22px; }
+    .nb-breadcrumb a { color: var(--ocean); border-bottom: 1px solid transparent; transition: border-color .2s var(--easing); }
+    .nb-breadcrumb a:hover { border-bottom-color: var(--ocean); }
+    .nb-breadcrumb-sep { margin: 0 12px; opacity: 0.5; }
+    .nb-hero .eyebrow { color: var(--ocean); margin-bottom: 14px; }
+    .nb-hero .eyebrow::before { background: var(--ocean); }
+    .nb-hero h1 { color: var(--ink); font-size: clamp(40px, 5.4vw, 76px); margin: 0; line-height: 1.02; }
+    .nb-hero h1 em { color: var(--ocean); font-style: italic; font-weight: 300; }
+    .nb-hero-lede { margin-top: 24px; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.7; color: var(--muted); max-width: 560px; font-weight: 300; }
+    .nb-hero-tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .nb-hero-tags span { font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink); padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; font-weight: 500; background: rgba(255,255,255,0.6); }
 
     .nb-content { max-width: var(--content-narrow); margin: 0 auto; padding: clamp(72px, 10vh, 120px) clamp(20px, 4vw, 56px); }
 
@@ -127,21 +122,18 @@
     .nb-faq .nb-faq-a p { font-size: 16px; line-height: 1.75; color: var(--muted); }
 
     .nb-cta {
-      background: var(--ocean-ink);
-      color: white;
+      background: var(--ivory);
+      color: var(--ink);
       text-align: center;
       padding: clamp(60px, 9vw, 100px) clamp(28px, 4vw, 56px);
       margin-top: clamp(60px, 8vh, 100px);
+      border: 1px solid var(--line);
       border-radius: 2px;
     }
-    .nb-cta h2 { color: white; margin-bottom: 16px; }
-    .nb-cta h2 em { color: rgba(255,255,255,0.7); }
-    .nb-cta p { color: rgba(255,255,255,0.78); max-width: 560px; margin: 0 auto 28px; }
+    .nb-cta h2 { color: var(--ink); margin-bottom: 16px; }
+    .nb-cta h2 em { color: var(--ocean); font-style: italic; font-weight: 300; }
+    .nb-cta p { color: var(--muted); max-width: 560px; margin: 0 auto 28px; }
     .nb-cta .btn { margin: 0 6px 10px; }
-    .nb-cta .btn-primary { background: white; color: var(--ink); border-color: white; }
-    .nb-cta .btn-primary:hover { background: var(--ocean); border-color: var(--ocean); color: white; }
-    .nb-cta .btn-ghost { color: white; border-color: rgba(255,255,255,0.45); }
-    .nb-cta .btn-ghost:hover { background: white; color: var(--ink); border-color: white; }
 
     @media (max-width: 760px) {
       .nb-grid-2, .nb-grid-3 { grid-template-columns: 1fr; }
@@ -257,17 +249,21 @@
 
     <section class="nb-hero" aria-labelledby="pageTitle">
       <div class="nb-hero-inner">
-        <p class="nb-breadcrumb"><a href="/">Home</a><span class="nb-breadcrumb-sep">/</span><a href="/neighborhoods/">Neighborhoods</a><span class="nb-breadcrumb-sep">/</span><span>Coral Gables</span></p>
-        <p class="eyebrow">Neighborhood Guide · The City Beautiful</p>
-        <h1 id="pageTitle">Living in <em>Coral Gables.</em></h1>
-        <p class="nb-hero-lede">A resident's guide to The City Beautiful — architecture, schools, restaurants, parks, landmarks, and the community details that define daily life in Coral Gables. Written by Tayreen Nelson, Coral Gables resident and residential real estate advisor with the Riley Smith Group at Compass.</p>
-        <div class="nb-hero-tags">
-          <span>The City Beautiful</span>
-          <span>Mediterranean Revival</span>
-          <span>Top-Rated Schools</span>
-          <span>Walkable Downtown</span>
-          <span>Mature Tree Canopy</span>
-          <span>International Character</span>
+        <div class="nb-hero-text">
+          <p class="nb-breadcrumb"><a href="/">Home</a><span class="nb-breadcrumb-sep">/</span><a href="/neighborhoods/">Neighborhoods</a><span class="nb-breadcrumb-sep">/</span><span>Coral Gables</span></p>
+          <p class="eyebrow blue">Neighborhood Guide · The City Beautiful</p>
+          <h1 id="pageTitle">Living in <em>Coral Gables.</em></h1>
+          <p class="nb-hero-lede">A resident's guide to The City Beautiful — architecture, schools, restaurants, parks, landmarks, and the community details that define daily life. Written by Tayreen Nelson, Coral Gables resident and residential real estate advisor with the Riley Smith Group at Compass.</p>
+          <div class="nb-hero-tags">
+            <span>The City Beautiful</span>
+            <span>Mediterranean Revival</span>
+            <span>Top-Rated Schools</span>
+            <span>Walkable Downtown</span>
+            <span>Mature Tree Canopy</span>
+          </div>
+        </div>
+        <div class="nb-hero-img">
+          <img src="/images/coral-gables-biltmore-aerial.jpg" alt="Aerial view of Coral Gables Mediterranean architecture with the Biltmore Hotel in the distance" width="1800" height="1199" loading="eager" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -423,11 +419,24 @@
       <div class="insider-band">
         <span class="nb-section-rule">What I Love Most</span>
         <h2>From a Coral Gables resident<br/>raising a family <em>in the Gables.</em></h2>
-        <p>I live in Coral Gables. I work in Coral Gables. I'm raising my family in Coral Gables. There are a few things about life here that no brochure captures, and that I find myself coming back to in conversations with clients considering a move.</p>
-        <p>Every December, the Coral Gables Fire Department drives a fire truck through every residential neighborhood with Santa on board, sirens going, handing out candy canes to kids and adults. My kids race out the door and follow the truck from block to block. It's the kind of detail you can't imagine until you see it — and once you've experienced it, you understand the specific community feel of this city.</p>
-        <p>I love that you don't have to drag your garbage cans out to the street — Coral Gables Public Works picks up from the side of your house. I love that we have the Youth Center running real recreation and sports programming year-round, and that we can walk over to the University of Miami's Mark Light Field to catch a college baseball game on a weeknight. And I love that the AIR program exists for families whose children — or whose own circumstances — benefit from inclusive recreation, because that's not a value statement every city actually backs with infrastructure.</p>
-        <p>Coral Gables isn't a place you choose because of one feature. It's a place you choose because the details add up.</p>
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(28px, 4vw, 56px); align-items: start; margin-top: 8px;">
+          <div>
+            <p>I live in Coral Gables. I work in Coral Gables. I'm raising my family in Coral Gables. There are a few things about life here that no brochure captures, and that I find myself coming back to in conversations with clients considering a move.</p>
+            <p>Every December, the Coral Gables Fire Department drives a fire truck through every residential neighborhood with Santa on board, sirens going, handing out candy canes to kids and adults. My kids race out the door and follow the truck from block to block. It's the kind of detail you can't imagine until you see it — and once you've experienced it, you understand the specific community feel of this city.</p>
+            <p>I love that you don't have to drag your garbage cans out to the street — Coral Gables Public Works picks up from the side of your house. I love that we have the Youth Center running real recreation and sports programming year-round, and that we can walk over to the University of Miami's Mark Light Field to catch a college baseball game on a weeknight. And I love that the AIR program exists for families whose children — or whose own circumstances — benefit from inclusive recreation, because that's not a value statement every city actually backs with infrastructure.</p>
+            <p>Coral Gables isn't a place you choose because of one feature. It's a place you choose because the details add up.</p>
+          </div>
+          <div>
+            <img src="/images/coral-gables-santa-firetruck.jpg" alt="Coral Gables Fire Department truck visiting residential neighborhoods with Santa each December" style="width: 100%; height: auto; max-height: 540px; object-fit: cover; object-position: center; border-radius: 2px; display: block;" loading="lazy" />
+            <p style="margin-top: 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--muted); font-weight: 500;">Coral Gables Fire Dept. · December · Santa Route</p>
+          </div>
+        </div>
       </div>
+      <style>
+        @media (max-width: 760px) {
+          .insider-band > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+        }
+      </style>
 
       <!-- ANNUAL EVENTS -->
       <div class="nb-section">
@@ -494,6 +503,16 @@
         </div>
       </div>
 
+      <!-- BROCHURE REQUEST -->
+      <div class="insider-band" style="border-left-color: var(--ocean); background: var(--paper);">
+        <span class="nb-section-rule">Want the Printed Guide?</span>
+        <h2>Request the full Coral Gables<br/>brochure as a <em>printed-quality PDF.</em></h2>
+        <p>I've prepared a longer-form, printed-quality brochure with photography, market context, and the full neighborhood breakdown — designed for in-person consultations and reading offline. It's not posted publicly. Email me below and I'll send it directly.</p>
+        <p style="margin-top: 24px;">
+          <a href="mailto:Tayreen@RileySmithGroup.com?subject=Request%20%E2%80%94%20Coral%20Gables%20Neighborhood%20Brochure&amp;body=Hi%20Tayreen%2C%0A%0AI%27d%20love%20to%20receive%20the%20Coral%20Gables%20neighborhood%20brochure.%0A%0AThank%20you%21%0A" class="btn btn-primary">Request the Coral Gables Brochure</a>
+        </p>
+      </div>
+
       <!-- FAQ -->
       <div class="nb-section">
         <span class="nb-section-rule">Common Questions</span>
@@ -524,7 +543,7 @@
 
       <!-- CTA -->
       <div class="nb-cta">
-        <p class="eyebrow" style="color: rgba(255,255,255,0.78);">Considering Coral Gables?</p>
+        <p class="eyebrow blue">Considering Coral Gables?</p>
         <h2>Let's have a real conversation<br/>about <em>your move.</em></h2>
         <p>Whether you're buying, selling, or evaluating Coral Gables against another neighborhood — the first call is always free, always candid, and informed by an advisor who lives, works, and is raising a family in the Gables.</p>
         <div style="margin-top: 18px;">
