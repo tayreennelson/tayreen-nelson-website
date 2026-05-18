@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#034A7D" />
+
+  <title>Living in Coral Gables · A Neighborhood Guide | Tayreen Nelson, Riley Smith Group at Compass</title>
+  <meta name="description" content="A resident's guide to Coral Gables — The City Beautiful. Architecture, schools, restaurants, parks, the Biltmore, Venetian Pool, the AIR inclusive recreation program, and what makes this Miami neighborhood worth choosing. By Tayreen Nelson, Coral Gables resident and Riley Smith Group at Compass real estate advisor." />
+  <meta name="keywords" content="Coral Gables real estate, living in Coral Gables, Coral Gables neighborhood guide, Coral Gables schools, Coral Gables Biltmore, Venetian Pool, The City Beautiful, Coral Gables homes for sale, Tayreen Nelson Coral Gables Realtor" />
+  <link rel="canonical" href="https://tayreennelson.com/neighborhoods/coral-gables/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Tayreen Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="Living in Coral Gables · A Neighborhood Guide" />
+  <meta property="og:description" content="A resident's guide to Coral Gables — architecture, schools, restaurants, parks, and the community details locals love. By Tayreen Nelson, Coral Gables resident and real estate advisor with the Riley Smith Group at Compass." />
+  <meta property="og:url" content="https://tayreennelson.com/neighborhoods/coral-gables/" />
+  <meta property="og:image" content="https://tayreennelson.com/images/tayreen-portrait.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Living in Coral Gables · A Neighborhood Guide" />
+  <meta name="twitter:description" content="A resident's guide to Coral Gables — by Tayreen Nelson, Riley Smith Group at Compass." />
+  <meta name="twitter:image" content="https://tayreennelson.com/images/tayreen-portrait.jpg" />
+
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* Neighborhood guide page styles */
+    .nb-hero {
+      background: var(--ocean-ink);
+      color: white;
+      padding: clamp(120px, 16vh, 180px) clamp(20px, 4vw, 56px) clamp(64px, 9vh, 100px);
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nb-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(3,74,125,0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(3,74,125,0.25) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .nb-hero-inner { max-width: var(--content-max); margin: 0 auto; position: relative; z-index: 1; }
+    .nb-breadcrumb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.28em; color: rgba(255,255,255,0.55); margin-bottom: 28px; }
+    .nb-breadcrumb a { color: rgba(255,255,255,0.78); border-bottom: 1px solid transparent; transition: border-color .2s var(--easing); }
+    .nb-breadcrumb a:hover { border-bottom-color: rgba(255,255,255,0.78); }
+    .nb-breadcrumb-sep { margin: 0 12px; opacity: 0.4; }
+    .nb-hero .eyebrow { color: rgba(255,255,255,0.7); margin-bottom: 18px; }
+    .nb-hero .eyebrow::before { background: rgba(255,255,255,0.7); }
+    .nb-hero h1 { color: white; font-size: clamp(42px, 6vw, 88px); margin: 0; line-height: 1.02; max-width: 1000px; }
+    .nb-hero h1 em { color: rgba(255,255,255,0.7); }
+    .nb-hero-lede { margin-top: 32px; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.7; color: rgba(255,255,255,0.82); max-width: 760px; font-weight: 300; }
+    .nb-hero-tags { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .nb-hero-tags span { font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(255,255,255,0.78); padding: 8px 14px; border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; font-weight: 500; }
+
+    .nb-content { max-width: var(--content-narrow); margin: 0 auto; padding: clamp(72px, 10vh, 120px) clamp(20px, 4vw, 56px); }
+
+    .nb-section { margin-bottom: clamp(72px, 10vh, 100px); }
+    .nb-section:last-child { margin-bottom: 0; }
+    .nb-section-rule {
+      font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.28em;
+      color: var(--ocean); margin-bottom: 28px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--line); display: block;
+    }
+    .nb-section h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 0 0 24px; line-height: 1.1; }
+    .nb-section h2 em { font-style: italic; color: var(--ocean); font-weight: 300; }
+    .nb-section p { font-size: 17px; line-height: 1.8; color: var(--ink); margin: 0 0 18px; max-width: 760px; font-weight: 300; }
+    .nb-section p strong { color: var(--ink); font-weight: 500; }
+
+    .nb-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+    .nb-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+    .nb-cell { background: var(--paper); padding: 28px 26px; }
+    .nb-cell h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--ocean); margin: 0 0 14px; font-weight: 500; }
+    .nb-cell ul { list-style: none; margin: 0; padding: 0; }
+    .nb-cell li { font-size: 14.5px; color: var(--ink); padding: 6px 0; border-bottom: 1px solid var(--line-soft); line-height: 1.55; font-weight: 300; }
+    .nb-cell li:last-child { border-bottom: 0; }
+    .nb-cell li em { color: var(--muted); font-style: italic; font-size: 12px; display: block; margin-top: 2px; }
+
+    .pullquote {
+      border-left: 2px solid var(--ocean);
+      padding: 8px 0 8px 28px;
+      margin: 36px 0;
+      font-size: clamp(19px, 1.8vw, 24px);
+      line-height: 1.5;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--ink);
+      max-width: 800px;
+    }
+    .pullquote cite { display: block; margin-top: 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--muted); font-style: normal; }
+
+    .quality-band {
+      background: var(--ink);
+      color: white;
+      padding: clamp(50px, 7vw, 80px) clamp(28px, 4vw, 56px);
+      margin: clamp(60px, 8vh, 96px) 0;
+      border-radius: 2px;
+    }
+    .quality-band h2 { color: white; margin-bottom: 24px; }
+    .quality-band h2 em { color: rgba(255,255,255,0.6); }
+    .quality-band p { color: rgba(255,255,255,0.78); }
+    .quality-band-rule { color: rgba(255,255,255,0.6); border-color: rgba(255,255,255,0.18); }
+
+    .insider-band {
+      background: var(--ivory);
+      padding: clamp(50px, 7vw, 80px) clamp(28px, 4vw, 56px);
+      margin: clamp(60px, 8vh, 96px) 0;
+      border-left: 3px solid var(--ocean);
+    }
+    .insider-band h2 { margin-bottom: 24px; }
+
+    .nb-faq { margin-top: 36px; }
+    .nb-faq details { border-bottom: 1px solid var(--line); padding: 22px 0; }
+    .nb-faq summary { cursor: pointer; list-style: none; font-size: 17px; font-weight: 400; color: var(--ink); padding-right: 28px; position: relative; line-height: 1.4; }
+    .nb-faq summary::-webkit-details-marker { display: none; }
+    .nb-faq summary::after { content: '+'; position: absolute; right: 0; top: 0; color: var(--ocean); font-size: 20px; font-weight: 300; line-height: 1; transition: transform .25s var(--easing); }
+    .nb-faq details[open] summary::after { content: '−'; }
+    .nb-faq summary:hover { color: var(--ocean); }
+    .nb-faq .nb-faq-a { padding-top: 16px; padding-right: 32px; }
+    .nb-faq .nb-faq-a p { font-size: 16px; line-height: 1.75; color: var(--muted); }
+
+    .nb-cta {
+      background: var(--ocean-ink);
+      color: white;
+      text-align: center;
+      padding: clamp(60px, 9vw, 100px) clamp(28px, 4vw, 56px);
+      margin-top: clamp(60px, 8vh, 100px);
+      border-radius: 2px;
+    }
+    .nb-cta h2 { color: white; margin-bottom: 16px; }
+    .nb-cta h2 em { color: rgba(255,255,255,0.7); }
+    .nb-cta p { color: rgba(255,255,255,0.78); max-width: 560px; margin: 0 auto 28px; }
+    .nb-cta .btn { margin: 0 6px 10px; }
+    .nb-cta .btn-primary { background: white; color: var(--ink); border-color: white; }
+    .nb-cta .btn-primary:hover { background: var(--ocean); border-color: var(--ocean); color: white; }
+    .nb-cta .btn-ghost { color: white; border-color: rgba(255,255,255,0.45); }
+    .nb-cta .btn-ghost:hover { background: white; color: var(--ink); border-color: white; }
+
+    @media (max-width: 760px) {
+      .nb-grid-2, .nb-grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Article schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Living in Coral Gables · A Neighborhood Guide",
+    "description": "A resident's guide to Coral Gables — The City Beautiful — covering architecture, schools, restaurants, parks, landmarks, and the community details that define daily life.",
+    "author": {
+      "@type": "Person",
+      "name": "Tayreen Nelson",
+      "url": "https://tayreennelson.com/",
+      "jobTitle": "Residential Real Estate Advisor, Riley Smith Group at Compass"
+    },
+    "publisher": {
+      "@type": "RealEstateAgent",
+      "name": "Tayreen Nelson · Riley Smith Group at Compass",
+      "url": "https://tayreennelson.com/"
+    },
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://tayreennelson.com/neighborhoods/coral-gables/",
+    "image": "https://tayreennelson.com/images/tayreen-portrait.jpg",
+    "inLanguage": "en-US",
+    "about": {
+      "@type": "Place",
+      "name": "Coral Gables, Florida",
+      "address": { "@type": "PostalAddress", "addressLocality": "Coral Gables", "addressRegion": "FL", "addressCountry": "US" }
+    }
+  }
+  </script>
+
+  <!-- Place schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Coral Gables, Florida",
+    "alternateName": "The City Beautiful",
+    "description": "Coral Gables is a planned community founded in 1925 by George Merrick, defined by Mediterranean Revival architecture, mature tree canopy, walkable downtown along Miracle Mile, and cultural anchors including the Biltmore Hotel, Venetian Pool, and the University of Miami.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Coral Gables", "addressRegion": "FL", "addressCountry": "US" },
+    "containedInPlace": { "@type": "AdministrativeArea", "name": "Miami-Dade County, Florida" }
+  }
+  </script>
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tayreennelson.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Neighborhoods", "item": "https://tayreennelson.com/neighborhoods/" },
+      { "@type": "ListItem", "position": 3, "name": "Coral Gables", "item": "https://tayreennelson.com/neighborhoods/coral-gables/" }
+    ]
+  }
+  </script>
+
+  <!-- FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Why do people choose Coral Gables over other Miami neighborhoods?", "acceptedAnswer": { "@type": "Answer", "text": "Coral Gables offers a planned community feel, mature tree canopy, strict architectural standards that preserve property values, walkable downtown along Miracle Mile and Giralda Plaza, top-rated public and private schools, and proximity to the University of Miami, Coconut Grove, and the airport. It's a residential city with its own civic identity rather than just a Miami neighborhood." } },
+      { "@type": "Question", "name": "What are the best schools in Coral Gables?", "acceptedAnswer": { "@type": "Answer", "text": "Coral Gables is anchored by top-rated public schools including Sunset Elementary, Coral Gables Elementary, Ponce de Leon Middle School, and Coral Gables Senior High School. Private school options include Riviera Day School, Gulliver Schools, St. Theresa Catholic School, and nearby Carrollton School of the Sacred Heart and Ransom Everglades in Coconut Grove. The University of Miami's main campus is in Coral Gables itself." } },
+      { "@type": "Question", "name": "What is the AIR program in Coral Gables?", "acceptedAnswer": { "@type": "Answer", "text": "AIR (Accessible and Inclusive Recreation) is Coral Gables' community recreation program serving children and adults with unique abilities, special needs, and sensory considerations. The program offers adaptive sports, recreation, and inclusive community events through the Coral Gables Department of Community Recreation. It is one of the distinguishing community features of the city." } },
+      { "@type": "Question", "name": "Are property values stable in Coral Gables?", "acceptedAnswer": { "@type": "Answer", "text": "Coral Gables historically maintains strong property value stability because of strict architectural standards, the city's century-old planned community design, mature tree canopy that cannot be quickly replicated elsewhere, top-rated school system, and limited supply of homes within the city boundaries. These factors create durable demand that does not depend on any single market cycle." } },
+      { "@type": "Question", "name": "What annual events are held in Coral Gables?", "acceptedAnswer": { "@type": "Answer", "text": "Coral Gables hosts the Junior Orange Bowl Festival (December–January), Beaux Arts Festival at the University of Miami (winter), Coral Gables Restaurant Week, Carnaval on the Mile, the annual Santa-on-the-fire-truck route through residential neighborhoods every December, Veterans Day Parade on Miracle Mile, the Coral Gables Art Cinema International and Italian Film Festivals, the Holiday Tree Lighting at City Hall, and Holidays on the Mile." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" id="siteHeader">
+    <a class="brand" href="/" aria-label="Tayreen Nelson — Riley Smith Group at Compass — home">
+      <span class="brand-name">Tayreen Nelson</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-sub">Riley Smith Group at Compass</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#sales">Sales</a>
+      <a href="/#strategy">Strategy</a>
+      <a href="/contract-qa/">Contract Q&amp;A</a>
+      <a href="/neighborhoods/" aria-current="page">Neighborhoods</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="/#about">About</a>
+    <a href="/#sales">Sales</a>
+    <a href="/#strategy">Strategy</a>
+    <a href="/contract-qa/">Contract Q&amp;A</a>
+    <a href="/neighborhoods/" aria-current="page">Neighborhoods</a>
+    <a href="/#reviews">Reviews</a>
+    <a href="/#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <section class="nb-hero" aria-labelledby="pageTitle">
+      <div class="nb-hero-inner">
+        <p class="nb-breadcrumb"><a href="/">Home</a><span class="nb-breadcrumb-sep">/</span><a href="/neighborhoods/">Neighborhoods</a><span class="nb-breadcrumb-sep">/</span><span>Coral Gables</span></p>
+        <p class="eyebrow">Neighborhood Guide · The City Beautiful</p>
+        <h1 id="pageTitle">Living in <em>Coral Gables.</em></h1>
+        <p class="nb-hero-lede">A resident's guide to The City Beautiful — architecture, schools, restaurants, parks, landmarks, and the community details that define daily life in Coral Gables. Written by Tayreen Nelson, Coral Gables resident and residential real estate advisor with the Riley Smith Group at Compass.</p>
+        <div class="nb-hero-tags">
+          <span>The City Beautiful</span>
+          <span>Mediterranean Revival</span>
+          <span>Top-Rated Schools</span>
+          <span>Walkable Downtown</span>
+          <span>Mature Tree Canopy</span>
+          <span>International Character</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="nb-content">
+
+      <!-- INTRODUCING -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Introducing Coral Gables</span>
+        <h2>A city designed to be<br/><em>beautiful by intention.</em></h2>
+        <p>Coral Gables is one of America's first planned communities, dreamed into existence by George Merrick in 1925 and built on a singular idea — that a city could be beautiful by design, not by accident. A century later, that vision remains intact. Mediterranean Revival architecture, mature oak and banyan canopies, strict design standards, and the coral rock landmarks that defined Merrick's original plan are still the city's organizing principles.</p>
+        <p>"The Gables," as locals call it, is anchored by a walkable downtown along <strong>Miracle Mile</strong> and <strong>Giralda Plaza</strong> — restaurants spilling onto sidewalks, independent boutiques, and the cultural gravity of Books &amp; Books, the Coral Gables Art Cinema, and the Coral Gables Museum. The <strong>Biltmore Hotel</strong> rises at the western edge as the city's most recognizable landmark, paired with the historic <strong>Venetian Pool</strong> — built from a quarried coral rock pit and still one of the most beautiful public swimming destinations in the United States.</p>
+        <p>Coral Gables is also a city of institutions. It is the home of the <strong>University of Miami</strong>, world headquarters for dozens of multinational companies, consulates from across Latin America, and some of South Florida's most respected private schools. The result is a residential community with international character, walkable streets, world-class restaurants, and a quietly powerful sense of permanence.</p>
+
+        <p class="pullquote">
+          Coral Gables is one of the only places in Miami where you can walk to a Michelin-rated restaurant, drop your kids at a top-five public school, see a UM baseball game on a Tuesday night, and still feel like you live in a small town with mature trees and slower streets.
+          <cite>— Tayreen Nelson · Coral Gables Resident</cite>
+        </p>
+      </div>
+
+      <!-- OUT & ABOUT -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Out &amp; About · Dine, Shop &amp; Stroll</span>
+        <h2>Walkable by design,<br/>refined by <em>tradition.</em></h2>
+        <p>Coral Gables anchors Miami's most refined dining and shopping district. Restaurants along Miracle Mile, Giralda Plaza, and Ponce de Leon Boulevard offer everything from fine dining to neighborhood bistros and cafés. The Shops at Merrick Park bring luxury retail; Miracle Mile delivers walkable boutique character; Books &amp; Books remains the cultural heart of the city.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>RSG Recommended Dining</h3>
+            <ul>
+              <li>Bachour</li>
+              <li>Caffe Abbracci</li>
+              <li>Estiatorio Milos</li>
+              <li>Eating House</li>
+              <li>Talavera Cocina Mexicana</li>
+              <li>Pascal's on Ponce</li>
+              <li>Bulla Gastrobar</li>
+              <li>Christy's Restaurant</li>
+              <li>Hillstone</li>
+              <li>John Martin's Irish Pub</li>
+              <li>Threefold Café</li>
+              <li>Books &amp; Books Café</li>
+              <li>Doraku Sushi</li>
+              <li>Frenchie's Diner</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Shopping &amp; Hotels</h3>
+            <ul>
+              <li>Miracle Mile <em>The Gables' iconic walkable corridor</em></li>
+              <li>Giralda Plaza <em>Pedestrian dining promenade</em></li>
+              <li>The Shops at Merrick Park <em>Luxury retail anchor</em></li>
+              <li>Downtown Coral Gables <em>Ponce de Leon corridor</em></li>
+              <li>The Biltmore Hotel</li>
+              <li>Hotel Colonnade Coral Gables</li>
+              <li>Loews Coral Gables Hotel</li>
+              <li>THesis Hotel Miami <em>UM-adjacent</em></li>
+              <li>AC Hotel Coral Gables</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIFESTYLE -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Lifestyle · Parks, Recreation &amp; Daily Rhythm</span>
+        <h2>Outdoor by default.<br/>Community by <em>design.</em></h2>
+        <p>Coral Gables prioritizes outdoor living. The <strong>Venetian Pool</strong>, <strong>Salvadore Park</strong>, and the historic <strong>Granada Golf Course</strong> sit within blocks of downtown — and weekend life moves naturally between farmers markets, family parks, the Youth Center, and the Biltmore's golf and tennis facilities. The <strong>Coral Gables War Memorial Youth Center</strong> runs year-round sports, swim, and recreation programming that genuinely anchors family life here.</p>
+
+        <div class="nb-grid-3">
+          <div class="nb-cell">
+            <h3>Parks &amp; Landmarks</h3>
+            <ul>
+              <li>Venetian Pool</li>
+              <li>Salvadore Park</li>
+              <li>Coral Gables War Memorial Youth Center</li>
+              <li>Riviera Park</li>
+              <li>Phillips Park</li>
+              <li>Coral Bay Park</li>
+              <li>Granada Golf Course</li>
+              <li>Matheson Hammock Park &amp; Marina</li>
+              <li>Fairchild Tropical Botanic Garden</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Gyms &amp; Wellness</h3>
+            <ul>
+              <li>Anatomy Coral Gables</li>
+              <li>Equinox Coral Gables</li>
+              <li>OrangeTheory Fitness</li>
+              <li>F45 Training</li>
+              <li>Pure Barre</li>
+              <li>SoulCycle</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Grocery &amp; Markets</h3>
+            <ul>
+              <li>Whole Foods Market</li>
+              <li>Trader Joe's</li>
+              <li>Fresh Market</li>
+              <li>Joseph's Classic Market</li>
+              <li>Milam's Market</li>
+              <li>Publix</li>
+              <li>Coral Gables Farmers Market <em>Sat. 8 AM – 1 PM at City Hall · in season</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION & COMMUNITY -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Education &amp; Community</span>
+        <h2>Schools families<br/><em>choose first.</em></h2>
+        <p>Coral Gables is one of the most education-rich neighborhoods in South Florida. Top-rated public schools, a deep roster of private school options, and the <strong>University of Miami</strong>'s main campus within city limits make this a destination for families, faculty, and international professionals who prioritize academic access.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Public Schools</h3>
+            <ul>
+              <li>Sunset Elementary School <em>Top-rated</em></li>
+              <li>Coral Gables Elementary School <em>Top-rated</em></li>
+              <li>Coral Gables Preparatory Academy <em>K–8</em></li>
+              <li>Ponce de Leon Middle School <em>Top-rated</em></li>
+              <li>Coral Gables Senior High School <em>The Cavaliers · Top-rated</em></li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Private Schools &amp; Universities</h3>
+            <ul>
+              <li>St. Theresa Catholic School <em>Pre-K to 8</em></li>
+              <li>Saints Peter and Paul School <em>Pre-K to 8</em></li>
+              <li>Riviera Day School <em>Pre-K to 12 · nearby</em></li>
+              <li>Gulliver Schools <em>Pre-K to 12 · nearby</em></li>
+              <li>Carrollton School of the Sacred Heart <em>Coconut Grove</em></li>
+              <li>Ransom Everglades <em>6–12 · Coconut Grove</em></li>
+              <li>University of Miami <em>Main campus, Coral Gables</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="margin-top: 36px;">Coral Gables also distinguishes itself through its <strong>AIR program</strong> — Accessible and Inclusive Recreation — administered by the city's Department of Community Recreation. AIR serves children and adults with unique abilities, special needs, and sensory considerations, offering adaptive sports, recreational programming, and inclusive community events. For families evaluating Miami neighborhoods with inclusion priorities in mind, the AIR program is a genuine differentiator that very few cities of comparable size match. More information is published on the City of Coral Gables website.</p>
+      </div>
+
+      <!-- QUALITY OF LIFE BAND -->
+      <div class="quality-band">
+        <span class="nb-section-rule quality-band-rule">Quality of Life</span>
+        <h2>The details<br/><em>residents notice.</em></h2>
+        <p>Coral Gables is a city run with unusual attention to its residents' daily experience. <strong style="color:white;">Garbage collection is from the side of the home, not the curb</strong> — a small service detail that residents quickly stop taking for granted. The mature tree canopy is preserved by city ordinance. Architectural review keeps streetscapes coherent. Public works, code enforcement, and community recreation programming all operate at a level closer to a small town than a major-city neighborhood. These aren't headline-grabbing features, but cumulatively they're a meaningful part of why people who move to Coral Gables tend to stay.</p>
+      </div>
+
+      <!-- INSIDER BAND -->
+      <div class="insider-band">
+        <span class="nb-section-rule">What I Love Most</span>
+        <h2>From a Coral Gables resident<br/>raising a family <em>in the Gables.</em></h2>
+        <p>I live in Coral Gables. I work in Coral Gables. I'm raising my family in Coral Gables. There are a few things about life here that no brochure captures, and that I find myself coming back to in conversations with clients considering a move.</p>
+        <p>Every December, the Coral Gables Fire Department drives a fire truck through every residential neighborhood with Santa on board, sirens going, handing out candy canes to kids and adults. My kids race out the door and follow the truck from block to block. It's the kind of detail you can't imagine until you see it — and once you've experienced it, you understand the specific community feel of this city.</p>
+        <p>I love that you don't have to drag your garbage cans out to the street — Coral Gables Public Works picks up from the side of your house. I love that we have the Youth Center running real recreation and sports programming year-round, and that we can walk over to the University of Miami's Mark Light Field to catch a college baseball game on a weeknight. And I love that the AIR program exists for families whose children — or whose own circumstances — benefit from inclusive recreation, because that's not a value statement every city actually backs with infrastructure.</p>
+        <p>Coral Gables isn't a place you choose because of one feature. It's a place you choose because the details add up.</p>
+      </div>
+
+      <!-- ANNUAL EVENTS -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Annual Events</span>
+        <h2>The calendar that<br/><em>defines the year.</em></h2>
+        <p>Coral Gables hosts a year-round calendar of cultural, culinary, and community events that reflect the city's commitment to the arts and its international identity.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Winter &amp; Spring</h3>
+            <ul>
+              <li>Junior Orange Bowl Festival <em>Dec–Jan</em></li>
+              <li>Beaux Arts Festival of Art <em>UM campus · January</em></li>
+              <li>Coral Gables Farmers Market opens <em>February</em></li>
+              <li>Coral Gables Restaurant Week</li>
+              <li>Carnaval on the Mile <em>Spring</em></li>
+              <li>Coral Gables Art Cinema International Film Festival</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Summer, Fall &amp; Holidays</h3>
+            <ul>
+              <li>4th of July at Salvadore Park</li>
+              <li>Italian Film Festival <em>Coral Gables Art Cinema</em></li>
+              <li>Veterans Day Parade <em>Miracle Mile</em></li>
+              <li>Holiday Tree Lighting <em>Coral Gables City Hall</em></li>
+              <li>Santa on the Fire Truck <em>December · residential routes</em></li>
+              <li>Holidays on the Mile</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Where You Are</span>
+        <h2>Central to <em>everything.</em></h2>
+        <p>Coral Gables sits at the geographic and cultural center of Miami — minutes from the airport, downtown, beaches, and the University of Miami, while remaining a residential community with its own civic identity.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Local Hubs</h3>
+            <ul>
+              <li>University of Miami · 1 mile</li>
+              <li>South Miami · 2 miles</li>
+              <li>Coconut Grove · 3 miles</li>
+              <li>Pinecrest · 5 miles</li>
+              <li>Brickell · 6 miles</li>
+              <li>Downtown Miami · 7 miles</li>
+              <li>Miami International Airport · 8 miles</li>
+              <li>Key Biscayne · 8 miles</li>
+              <li>Miami Beach · 12 miles</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Other Cities</h3>
+            <ul>
+              <li>Fort Lauderdale · 30 miles</li>
+              <li>Boca Raton · 50 miles</li>
+              <li>Key Largo · 60 miles</li>
+              <li>West Palm Beach · 75 miles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Common Questions</span>
+        <h2>What people ask about<br/><em>Coral Gables.</em></h2>
+        <div class="nb-faq">
+          <details>
+            <summary>Why do people choose Coral Gables over other Miami neighborhoods?</summary>
+            <div class="nb-faq-a"><p>Coral Gables offers something most Miami neighborhoods cannot — a planned community feel, mature tree canopy, strict architectural standards that preserve property values, walkable downtown along Miracle Mile and Giralda Plaza, top-rated public and private schools, and proximity to the University of Miami, Coconut Grove, and the airport. It is a residential city with its own civic identity rather than just a Miami neighborhood.</p></div>
+          </details>
+          <details>
+            <summary>What are the best schools in Coral Gables?</summary>
+            <div class="nb-faq-a"><p>Coral Gables is anchored by top-rated public schools including Sunset Elementary, Coral Gables Elementary, Ponce de Leon Middle School, and Coral Gables Senior High School. Private school options include Riviera Day School, Gulliver Schools, St. Theresa Catholic School, and nearby Carrollton School of the Sacred Heart and Ransom Everglades in Coconut Grove. The University of Miami's main campus is in Coral Gables itself.</p></div>
+          </details>
+          <details>
+            <summary>What is the AIR program in Coral Gables?</summary>
+            <div class="nb-faq-a"><p>AIR (Accessible and Inclusive Recreation) is the city's community recreation program serving children and adults with unique abilities, special needs, and sensory considerations. The program offers adaptive sports, recreation, and inclusive community events through the Coral Gables Department of Community Recreation. It is one of the distinguishing community features of the city and is detailed on the official City of Coral Gables website.</p></div>
+          </details>
+          <details>
+            <summary>Are property values stable in Coral Gables?</summary>
+            <div class="nb-faq-a"><p>Coral Gables historically maintains strong property value stability because of strict architectural standards, the city's century-old planned community design, mature tree canopy that cannot be quickly replicated elsewhere, top-rated school system, and limited supply of homes within the city boundaries. These factors create durable demand that does not depend on any single market cycle.</p></div>
+          </details>
+          <details>
+            <summary>What is daily life actually like in Coral Gables?</summary>
+            <div class="nb-faq-a"><p>Walkable. Tree-shaded. Family-anchored. Daily life moves between Miracle Mile, the Venetian Pool, the Youth Center, the Biltmore, Salvadore Park, the farmers market, and the University of Miami's events calendar. Garbage collection is from the side of the house. The fire department brings Santa through residential neighborhoods every December. The neighborhood feels small in the best way, with the cultural amenities of a major city a few blocks away.</p></div>
+          </details>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="nb-cta">
+        <p class="eyebrow" style="color: rgba(255,255,255,0.78);">Considering Coral Gables?</p>
+        <h2>Let's have a real conversation<br/>about <em>your move.</em></h2>
+        <p>Whether you're buying, selling, or evaluating Coral Gables against another neighborhood — the first call is always free, always candid, and informed by an advisor who lives, works, and is raising a family in the Gables.</p>
+        <div style="margin-top: 18px;">
+          <a href="/#contact" class="btn btn-primary">Schedule a Private Consultation</a>
+          <a href="/contract-qa/" class="btn btn-ghost">Read the Florida Contract Q&amp;A</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">Tayreen Nelson</p>
+        <p class="footer-team">Riley Smith Group at Compass</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/#sales">Sales</a>
+        <a href="/#strategy">Strategy</a>
+        <a href="/contract-qa/">Contract Q&amp;A</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+19542438117">(954) 243-8117</a>
+        <a href="mailto:Tayreen@RileySmithGroup.com">Tayreen@RileySmithGroup.com</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="/images/rsg-compass-white.png" alt="Riley Smith Group at Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <img src="/images/law-grads-white.svg" alt="Law Grads of Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <div class="eho-badge" aria-label="Equal Housing Opportunity">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" role="img" focusable="false">
+          <rect x="2" y="2" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L52 28 L48 28 L48 50 L36 50 L36 36 L28 36 L28 50 L16 50 L16 28 L12 28 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <text x="32" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">EQUAL HOUSING</text>
+          <text x="32" y="63" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">OPPORTUNITY</text>
+        </svg>
+        <span class="eho-label">Equal Housing<br/>Opportunity</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Tayreen Nelson is a real estate sales associate affiliated with Compass Florida, LLC d/b/a Compass, a licensed real estate broker, and a member of Riley Smith Group at Compass. All material is intended for informational real estate marketing purposes only. Nothing herein shall be construed as legal, tax, accounting, or other professional advice outside the scope of real estate brokerage services.
+    </p>
+    <p class="footer-copy">© <span id="year">2026</span> Tayreen Nelson · Riley Smith Group at Compass · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('mobileNav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        var open = !nav.hasAttribute('hidden');
+        if(open){ nav.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); btn.classList.remove('is-open'); }
+        else { nav.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); btn.classList.add('is-open'); }
+      });
+    })();
+  </script>
+</body>
+</html>
