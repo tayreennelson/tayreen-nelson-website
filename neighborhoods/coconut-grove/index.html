@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#034A7D" />
+
+  <title>Living in Coconut Grove · A Neighborhood Guide | Tayreen Nelson, Riley Smith Group at Compass</title>
+  <meta name="description" content="A guide to Coconut Grove — Miami's oldest neighborhood. Architecture, schools, restaurants, sailing, the Old Grove canopy, Vizcaya, the Sailing Club, and what defines daily life in The Grove. By Tayreen Nelson, Riley Smith Group at Compass real estate advisor." />
+  <meta name="keywords" content="Coconut Grove real estate, living in Coconut Grove, Coconut Grove neighborhood guide, Coconut Grove schools, Vizcaya, Coconut Grove Sailing Club, The Grove Miami, Coconut Grove homes for sale, Tayreen Nelson Coconut Grove Realtor" />
+  <link rel="canonical" href="https://tayreennelson.com/neighborhoods/coconut-grove/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Tayreen Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="Living in Coconut Grove · A Neighborhood Guide" />
+  <meta property="og:description" content="A guide to Coconut Grove — Miami's oldest neighborhood. By Tayreen Nelson, residential real estate advisor with the Riley Smith Group at Compass." />
+  <meta property="og:url" content="https://tayreennelson.com/neighborhoods/coconut-grove/" />
+  <meta property="og:image" content="https://tayreennelson.com/images/micanopy-pool.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Living in Coconut Grove · A Neighborhood Guide" />
+  <meta name="twitter:description" content="A guide to Coconut Grove — Miami's oldest neighborhood. By Tayreen Nelson, Riley Smith Group at Compass." />
+  <meta name="twitter:image" content="https://tayreennelson.com/images/micanopy-pool.jpg" />
+
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* Neighborhood guide page styles — light hero matching homepage */
+    .nb-hero { background: var(--paper); color: var(--ink); padding: clamp(120px, 16vh, 180px) clamp(20px, 4vw, 56px) clamp(48px, 7vh, 80px); position: relative; overflow: hidden; border-bottom: 1px solid var(--line-soft); }
+    .nb-hero-inner { max-width: var(--content-max); margin: 0 auto; position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+    .nb-hero-text { min-width: 0; }
+    .nb-hero-img { position: relative; }
+    .nb-hero-img img { width: 100%; height: auto; max-height: 540px; object-fit: cover; object-position: 50% 35%; border-radius: 2px; display: block; }
+    @media (max-width: 900px) { .nb-hero-inner { grid-template-columns: 1fr; } .nb-hero-img img { max-height: 380px; } }
+    .nb-breadcrumb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.28em; color: var(--muted); margin-bottom: 22px; }
+    .nb-breadcrumb a { color: var(--ocean); border-bottom: 1px solid transparent; transition: border-color .2s var(--easing); }
+    .nb-breadcrumb a:hover { border-bottom-color: var(--ocean); }
+    .nb-breadcrumb-sep { margin: 0 12px; opacity: 0.5; }
+    .nb-hero .eyebrow { color: var(--ocean); margin-bottom: 14px; }
+    .nb-hero .eyebrow::before { background: var(--ocean); }
+    .nb-hero h1 { color: var(--ink); font-size: clamp(40px, 5.4vw, 76px); margin: 0; line-height: 1.02; }
+    .nb-hero h1 em { color: var(--ocean); font-style: italic; font-weight: 300; }
+    .nb-hero-lede { margin-top: 24px; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.7; color: var(--muted); max-width: 560px; font-weight: 300; }
+    .nb-hero-tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .nb-hero-tags span { font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink); padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; font-weight: 500; background: rgba(255,255,255,0.6); }
+
+    .nb-content { max-width: var(--content-narrow); margin: 0 auto; padding: clamp(72px, 10vh, 120px) clamp(20px, 4vw, 56px); }
+    .nb-section { margin-bottom: clamp(72px, 10vh, 100px); }
+    .nb-section:last-child { margin-bottom: 0; }
+    .nb-section-rule { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.28em; color: var(--ocean); margin-bottom: 28px; padding-bottom: 14px; border-bottom: 1px solid var(--line); display: block; }
+    .nb-section h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 0 0 24px; line-height: 1.1; }
+    .nb-section h2 em { font-style: italic; color: var(--ocean); font-weight: 300; }
+    .nb-section p { font-size: 17px; line-height: 1.8; color: var(--ink); margin: 0 0 18px; max-width: 760px; font-weight: 300; }
+    .nb-section p strong { color: var(--ink); font-weight: 500; }
+
+    .nb-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+    .nb-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+    .nb-cell { background: var(--paper); padding: 28px 26px; }
+    .nb-cell h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--ocean); margin: 0 0 14px; font-weight: 500; }
+    .nb-cell ul { list-style: none; margin: 0; padding: 0; }
+    .nb-cell li { font-size: 14.5px; color: var(--ink); padding: 6px 0; border-bottom: 1px solid var(--line-soft); line-height: 1.55; font-weight: 300; }
+    .nb-cell li:last-child { border-bottom: 0; }
+    .nb-cell li em { color: var(--muted); font-style: italic; font-size: 12px; display: block; margin-top: 2px; }
+
+    .pullquote { border-left: 2px solid var(--ocean); padding: 8px 0 8px 28px; margin: 36px 0; font-size: clamp(19px, 1.8vw, 24px); line-height: 1.5; font-style: italic; font-weight: 300; color: var(--ink); max-width: 800px; }
+    .pullquote cite { display: block; margin-top: 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--muted); font-style: normal; }
+
+    .quality-band { background: var(--ink); color: white; padding: clamp(50px, 7vw, 80px) clamp(28px, 4vw, 56px); margin: clamp(60px, 8vh, 96px) 0; border-radius: 2px; }
+    .quality-band h2 { color: white; margin-bottom: 24px; }
+    .quality-band h2 em { color: rgba(255,255,255,0.6); }
+    .quality-band p { color: rgba(255,255,255,0.78); }
+    .quality-band-rule { color: rgba(255,255,255,0.6); border-color: rgba(255,255,255,0.18); }
+
+    .insider-band { background: var(--ivory); padding: clamp(50px, 7vw, 80px) clamp(28px, 4vw, 56px); margin: clamp(60px, 8vh, 96px) 0; border-left: 3px solid var(--ocean); }
+    .insider-band h2 { margin-bottom: 24px; }
+    .insider-band p { font-size: 17px; line-height: 1.8; color: var(--ink); margin: 0 0 18px; max-width: 760px; font-weight: 300; }
+    .insider-band p strong { color: var(--ink); font-weight: 500; }
+
+    .feature-image-band { margin: clamp(60px, 8vh, 96px) 0; }
+    .feature-image-band img { width: 100%; height: auto; max-height: 520px; object-fit: cover; object-position: 50% 35%; border-radius: 2px; }
+    .feature-image-caption { margin-top: 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.24em; color: var(--muted); }
+
+    .nb-faq { margin-top: 36px; }
+    .nb-faq details { border-bottom: 1px solid var(--line); padding: 22px 0; }
+    .nb-faq summary { cursor: pointer; list-style: none; font-size: 17px; font-weight: 400; color: var(--ink); padding-right: 28px; position: relative; line-height: 1.4; }
+    .nb-faq summary::-webkit-details-marker { display: none; }
+    .nb-faq summary::after { content: '+'; position: absolute; right: 0; top: 0; color: var(--ocean); font-size: 20px; font-weight: 300; line-height: 1; transition: transform .25s var(--easing); }
+    .nb-faq details[open] summary::after { content: '−'; }
+    .nb-faq summary:hover { color: var(--ocean); }
+    .nb-faq .nb-faq-a { padding-top: 16px; padding-right: 32px; }
+    .nb-faq .nb-faq-a p { font-size: 16px; line-height: 1.75; color: var(--muted); }
+
+    .nb-cta { background: var(--ivory); color: var(--ink); text-align: center; padding: clamp(60px, 9vw, 100px) clamp(28px, 4vw, 56px); margin-top: clamp(60px, 8vh, 100px); border: 1px solid var(--line); border-radius: 2px; }
+    .nb-cta h2 { color: var(--ink); margin-bottom: 16px; }
+    .nb-cta h2 em { color: var(--ocean); font-style: italic; font-weight: 300; }
+    .nb-cta p { color: var(--muted); max-width: 560px; margin: 0 auto 28px; }
+    .nb-cta .btn { margin: 0 6px 10px; }
+
+    @media (max-width: 760px) {
+      .nb-grid-2, .nb-grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Living in Coconut Grove · A Neighborhood Guide",
+    "description": "A guide to Coconut Grove, Miami's oldest neighborhood — architecture, schools, restaurants, waterfront life, the Old Grove canopy, and the cultural anchors that define daily life.",
+    "author": { "@type": "Person", "name": "Tayreen Nelson", "url": "https://tayreennelson.com/", "jobTitle": "Residential Real Estate Advisor, Riley Smith Group at Compass" },
+    "publisher": { "@type": "RealEstateAgent", "name": "Tayreen Nelson · Riley Smith Group at Compass", "url": "https://tayreennelson.com/" },
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://tayreennelson.com/neighborhoods/coconut-grove/",
+    "image": "https://tayreennelson.com/images/micanopy-pool.jpg",
+    "inLanguage": "en-US",
+    "about": { "@type": "Place", "name": "Coconut Grove, Miami, Florida", "address": { "@type": "PostalAddress", "addressLocality": "Coconut Grove", "addressRegion": "FL", "addressCountry": "US" } }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Coconut Grove, Miami, Florida",
+    "alternateName": "The Grove",
+    "description": "Coconut Grove is Miami's oldest neighborhood, defined by its tropical oak and banyan canopy, bayfront marinas, historic architecture, walkable village center, and cultural anchors including Vizcaya Museum & Gardens, the Coconut Grove Sailing Club, and the Barnacle Historic State Park.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Coconut Grove", "addressRegion": "FL", "addressCountry": "US" },
+    "containedInPlace": { "@type": "AdministrativeArea", "name": "Miami-Dade County, Florida" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tayreennelson.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Neighborhoods", "item": "https://tayreennelson.com/neighborhoods/" },
+      { "@type": "ListItem", "position": 3, "name": "Coconut Grove", "item": "https://tayreennelson.com/neighborhoods/coconut-grove/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is Coconut Grove known for?", "acceptedAnswer": { "@type": "Answer", "text": "Coconut Grove is Miami's oldest neighborhood, established in the 1870s, and is defined by its mature oak and banyan tree canopy, bayfront access, historic architecture, and walkable Grove Village Center. It is home to Vizcaya Museum and Gardens, the Coconut Grove Sailing Club, Coral Reef Yacht Club, Biscayne Bay Yacht Club, Peacock Park, Kennedy Park, Regatta Park, and the Barnacle Historic State Park. The neighborhood is also home to independent schools including Ransom Everglades and Carrollton School of the Sacred Heart, and adjacent to the University of Miami in Coral Gables." } },
+      { "@type": "Question", "name": "What makes Coconut Grove different from other Miami neighborhoods?", "acceptedAnswer": { "@type": "Answer", "text": "Coconut Grove is distinct from other Miami neighborhoods because of its tropical canopy that cannot be quickly replicated, its bohemian and artistic character (rooted in the neighborhood's 1960s history), its waterfront orientation toward Biscayne Bay, lower-profile architecture set on deeper lots, and a buyer pool that includes international, artistic, and tech-industry residents drawn to the neighborhood's quieter pace." } },
+      { "@type": "Question", "name": "What schools are located in Coconut Grove?", "acceptedAnswer": { "@type": "Answer", "text": "Coconut Grove is home to Ransom Everglades School (grades 6–12), Carrollton School of the Sacred Heart (Pre-K to 12), St. Stephen's Episcopal Day School, Coconut Grove Montessori School, Plymouth Preschool of the Arts, MCA Academy, and Vanguard School of Coconut Grove. Public schools include Coconut Grove Elementary, Frances S. Tucker Elementary, and George Washington Carver Middle School. The University of Miami in adjacent Coral Gables is within minutes of the Grove. School information is provided for general reference; please verify school assignments and ratings independently through dadeschools.net or GreatSchools.org." } },
+      { "@type": "Question", "name": "Is Coconut Grove walkable?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Coconut Grove's downtown — known as the Grove Village Center — is one of the most walkable areas in Miami. The CocoWalk shopping mall, Commodore Plaza, Peacock Park, and the marina district are all walkable from each other, and the residential streets surrounding the village are golf-cart friendly and tree-shaded. Many Grove residents move primarily on foot or by golf cart within the neighborhood." } },
+      { "@type": "Question", "name": "What annual events happen in Coconut Grove?", "acceptedAnswer": { "@type": "Answer", "text": "Coconut Grove hosts the King Mango Strut Parade (January), the Coconut Grove Arts Festival (February), Coconut Grove Food and Wine Festival (March), the Great Taste of the Grove (April), Miami Kids Magazine Family Fest (June), 4th of July Orchestra Concert at Peacock Park, Coconut Grove Summer Craft Beer Festival (August), Coconut Grove Pumpkin Patch Festival and Grovetoberfest (October), and the South Florida Seafood Festival (November)." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" id="siteHeader">
+    <a class="brand" href="/" aria-label="Tayreen Nelson — Riley Smith Group at Compass — home">
+      <span class="brand-name">Tayreen Nelson</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-sub">Riley Smith Group at Compass</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#sales">Sales</a>
+      <a href="/#strategy">Strategy</a>
+      <a href="/contract-qa/">Contract Q&amp;A</a>
+      <a href="/neighborhoods/" aria-current="page">Neighborhoods</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="/#about">About</a>
+    <a href="/#sales">Sales</a>
+    <a href="/#strategy">Strategy</a>
+    <a href="/contract-qa/">Contract Q&amp;A</a>
+    <a href="/neighborhoods/" aria-current="page">Neighborhoods</a>
+    <a href="/#reviews">Reviews</a>
+    <a href="/#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <section class="nb-hero" aria-labelledby="pageTitle">
+      <div class="nb-hero-inner">
+        <div class="nb-hero-text">
+          <p class="nb-breadcrumb"><a href="/">Home</a><span class="nb-breadcrumb-sep">/</span><a href="/neighborhoods/">Neighborhoods</a><span class="nb-breadcrumb-sep">/</span><span>Coconut Grove</span></p>
+          <p class="eyebrow blue">Neighborhood Guide · Miami's Oldest</p>
+          <h1 id="pageTitle">Living in <em>Coconut Grove.</em></h1>
+          <p class="nb-hero-lede">A guide to Miami's oldest neighborhood — the canopy, the waterfront, the village, the schools, and the cultural rhythm that has defined Grove life for more than a century. Written by Tayreen Nelson, residential real estate advisor with the Riley Smith Group at Compass.</p>
+          <div class="nb-hero-tags">
+            <span>Miami's Oldest</span>
+            <span>Waterfront Living</span>
+            <span>Old Grove Canopy</span>
+            <span>Walkable Village</span>
+            <span>Bohemian Vibe</span>
+          </div>
+        </div>
+        <div class="nb-hero-img">
+          <img src="/images/micanopy-pool.jpg" alt="A contemporary Coconut Grove home with pool under the Old Grove oak canopy" width="1080" height="1350" loading="eager" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <div class="nb-content">
+
+      <!-- INTRODUCING -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Introducing Coconut Grove</span>
+        <h2>A laid-back oasis,<br/>built under <em>the canopy.</em></h2>
+        <p>Coconut Grove is Miami's oldest neighborhood, and traces of its colorful past are evident on every street corner. Blanketed by tropical greenery, the Grove features plentiful wildlife and ebullient natural beauty. Between bricks of coral and limestone, ivy-coated walls, ample shade, and historic architecture that references its roots as a bohemian community in the 1960s, its distinctively vibrant ambience is unmistakable.</p>
+        <p>"The Grove," as it's known to locals, is famous for both its downtown strip and the bayfront. Its downtown area features the <strong>CocoWalk</strong> shopping center, as well as a number of local bars, boutiques, and restaurants in the colorful surrounding blocks. Along the water, you'll encounter one of Miami's largest marinas and <strong>Peacock Park</strong>. Coconut Grove is also home to the stunning <strong>Vizcaya Museum &amp; Gardens</strong>, which features Spanish architecture and the most elaborate cultivated garden in the city.</p>
+        <p>You'll fall in love with the outdoor culture, eccentric spirit, and winding streets draped in greenery and charm. Coconut Grove exemplifies the original South Florida ideal — a modern lifestyle in a place that feels separated from time.</p>
+
+        <p class="pullquote">
+          Drive down Tigertail, Crystal Court, or El Prado and you understand instantly. The oak and banyan canopy that defines Coconut Grove isn't decorative — it's the reason people who can live anywhere in Miami choose to live here.
+          <cite>— Tayreen Nelson · Riley Smith Group at Compass</cite>
+        </p>
+      </div>
+
+      <!-- OUT & ABOUT -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Out &amp; About · Dine, Shop &amp; Stroll</span>
+        <h2>Where the village<br/>meets <em>the water.</em></h2>
+        <p>Coconut Grove offers diverse dining options, unique shopping experiences, and best-in-class waterfront resorts. From cozy cafés to Michelin-starred restaurants, the Grove rewards walking from block to block. Independent boutiques along Commodore Plaza, the CocoWalk shopping center, and the historic streets surrounding the village give the neighborhood a feel no other Miami district has — closer to a Caribbean village than to a major American city.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>RSG Recommended Dining</h3>
+            <ul>
+              <li>Ariete <em>Michelin-starred</em></li>
+              <li>Los Felix <em>Michelin-starred</em></li>
+              <li>Lokal</li>
+              <li>Bombay Darbar</li>
+              <li>Greenstreet Café</li>
+              <li>Amal</li>
+              <li>Glass &amp; Vine</li>
+              <li>Sadelle's</li>
+              <li>Carbone Vino</li>
+              <li>Strada in the Grove</li>
+              <li>Jaguar</li>
+              <li>Loretta &amp; The Butcher</li>
+              <li>Sapore di Mare</li>
+              <li>Monty's Raw Bar</li>
+              <li>Sushi by Scratch</li>
+              <li>Bellini</li>
+              <li>Bayshore Club</li>
+              <li>Koko By Bakan</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Shopping &amp; Hotels</h3>
+            <ul>
+              <li>CocoWalk <em>The Grove's iconic shopping center</em></li>
+              <li>Commodore Plaza <em>Independent boutiques + cafés</em></li>
+              <li>Grove Village Center</li>
+              <li>Mr. C Miami <em>Bayfront luxury</em></li>
+              <li>Ritz-Carlton Coconut Grove</li>
+              <li>Mayfair House Hotel &amp; Garden</li>
+              <li>The Mutiny</li>
+              <li>Hotel Arya</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIFESTYLE -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Lifestyle · Parks, Waterfront &amp; Daily Rhythm</span>
+        <h2>The water,<br/>the trees, <em>the village.</em></h2>
+        <p>Coconut Grove makes staying active, nourished, and one-with-nature a daily habit rather than a weekend plan. Premium gyms, organic markets, and a connected park system — anchored by Kennedy, Peacock, and Regatta Parks along the bayfront — sit minutes from any Grove address. The Grove is golf-cart friendly, walkable, and shaped around its marinas as much as its streets.</p>
+
+        <div class="nb-grid-3">
+          <div class="nb-cell">
+            <h3>Parks &amp; Gardens</h3>
+            <ul>
+              <li>David T. Kennedy Park</li>
+              <li>Peacock Park</li>
+              <li>Regatta Park</li>
+              <li>The Barnacle Historic State Park</li>
+              <li>Merrie Christmas Park</li>
+              <li>The Kampong <em>National Tropical Botanical Garden</em></li>
+              <li>Vizcaya Museum &amp; Gardens</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Marinas &amp; Clubs</h3>
+            <ul>
+              <li>Dinner Key Marina</li>
+              <li>Grove Harbour Marina</li>
+              <li>Grove Isle Marina</li>
+              <li>Coconut Grove Sailing Club</li>
+              <li>Coral Reef Yacht Club</li>
+              <li>Biscayne Bay Yacht Club</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Wellness &amp; Markets</h3>
+            <ul>
+              <li>Anatomy</li>
+              <li>Train 8NINE</li>
+              <li>Z-Form Fitness</li>
+              <li>Fresh Market</li>
+              <li>Milam's Market</li>
+              <li>Coconut Grove Farmers Market <em>Sat. 10 AM – 7 PM</em></li>
+              <li>Grove Green Market <em>1st Sat./month · 9 AM – 2 PM</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUALITY OF LIFE BAND -->
+      <div class="quality-band">
+        <span class="nb-section-rule quality-band-rule">The Canopy</span>
+        <h2>The Old Grove canopy<br/>is <em>the city itself.</em></h2>
+        <p>The mature oak and banyan canopy that defines Coconut Grove isn't decorative — it's the reason people who can live anywhere in Miami choose to live here. It shapes the architecture (contemporary Spanish, lower-profile, deeper lots). It shapes the buyer pool (private, often artistic, often international). It shapes what a Grove home sells for and how quickly. If you own under that canopy and are considering a sale, marketing has to start with what's already there before it gets to what's inside the four walls. That's the difference between listing a home in Miami and listing a Grove home.</p>
+      </div>
+
+      <!-- INSIDER BAND -->
+      <div class="insider-band">
+        <span class="nb-section-rule">What I Love About the Grove</span>
+        <h2>The Grove is my<br/><em>professional home.</em></h2>
+        <p>My office is here, my extended family is here, my clients are here, and the rhythm of the neighborhood is part of my daily life in a way no brochure can communicate. A few things I find myself coming back to — details that rarely make it into the marketing copy.</p>
+        <p>Riding bikes to the Village Center on a Saturday morning, weaving through tree-canopied streets that feel more like a Caribbean village than a major American city. Open-air lunch at the <strong>Coconut Grove Sailing Club</strong>, looking out across the mooring field and Biscayne Bay — a quiet members' view most of Miami never sees. Walking in and out of my office every day with <strong>Monty's marina</strong> just off to the side: sailboats, fishing boats, the constant blue. Dinner at <strong>Glass &amp; Vine</strong> on a weeknight while the kids play in <strong>Peacock Park</strong> next door — the indoor-outdoor, casual-and-elevated rhythm the Grove specializes in. Saturday mornings at the <strong>organic farmers market on Grand Avenue</strong>, where I run into past clients, friends, and neighbors picking out tomatoes and avocados. And every October, trick-or-treating in the <strong>South Grove</strong> on storied streets like <strong>Irvington Avenue</strong> — neighbors go all out, the whole community turns out, and it's the kind of tradition our family looks forward to every year. Spring brings the <strong>Gifford Lane Art Stroll</strong>, a uniquely Grove tradition where neighbors and artists open the street to local art, music, and the kind of warm gathering that defines what makes this place itself.</p>
+        <p>The South Grove's streets are deliberately different — most residential streets have no sidewalks, just narrow canopied lanes where you walk in the street under the banyans. It's part of what gives the Grove its quieter, more organic feel, and one of the genuine differences between living in the Grove and living in Coral Gables. Worth knowing if you're choosing between them.</p>
+        <p>These aren't tourist activities. They're the everyday rhythm of Grove life — and they're why clients who move here from somewhere else tend to stay.</p>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Education &amp; Schools</span>
+        <h2>Education is part<br/>of the <em>Grove identity.</em></h2>
+        <p>Coconut Grove has a long history of educational institutions. Independent schools include <strong>Ransom Everglades</strong> and <strong>Carrollton School of the Sacred Heart</strong>, alongside a range of public and private elementary, middle, and high schools across the neighborhood. The University of Miami in adjacent Coral Gables is minutes away, making the Grove a destination for faculty, graduate students, and families considering academic proximity.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Public Schools</h3>
+            <ul>
+              <li>Coconut Grove Elementary <em>Pre-K to 5</em></li>
+              <li>Frances S. Tucker Elementary <em>Pre-K to 5</em></li>
+              <li>George Washington Carver Middle <em>6–8 · Magnet program</em></li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Private Schools &amp; Universities</h3>
+            <ul>
+              <li>Ransom Everglades School <em>6–12</em></li>
+              <li>Carrollton School of the Sacred Heart <em>Pre-K to 12</em></li>
+              <li>St. Stephen's Episcopal Day School <em>Pre-K to 5</em></li>
+              <li>Coconut Grove Montessori School <em>Pre-K to 5</em></li>
+              <li>Plymouth Preschool of the Arts <em>Ages 3–5</em></li>
+              <li>Vanguard School of Coconut Grove <em>1–8</em></li>
+              <li>Immaculata-La Salle High School <em>9–12</em></li>
+              <li>St. Hugh Catholic School <em>K–8</em></li>
+              <li>MCA Academy <em>2–12</em></li>
+              <li>University of Miami <em>Coral Gables · adjacent</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="margin-top: 24px; font-size: 13px; color: var(--muted); font-style: italic; line-height: 1.6;">School information is provided for general reference. School assignments, boundaries, and ratings change. Please independently verify school information through Miami-Dade County Public Schools (dadeschools.net) and objective sources such as GreatSchools.org.</p>
+      </div>
+
+      <!-- ANNUAL EVENTS -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Annual Events</span>
+        <h2>A village calendar,<br/><em>year after year.</em></h2>
+        <p>Coconut Grove hosts an exceptional lineup of annual events and festivals, offering locals and visitors a chance to experience the Grove's outdoor magic, culture, and sense of community all year round.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Winter &amp; Spring</h3>
+            <ul>
+              <li>King Mango Strut Parade <em>January</em></li>
+              <li>Coconut Grove Arts Festival <em>February</em></li>
+              <li>Coconut Grove Food &amp; Wine Festival <em>March · Elizabeth Virrick Park</em></li>
+              <li>Great Taste of the Grove <em>April · Peacock Park</em></li>
+              <li>Miami Kids Magazine Family Fest <em>June · Regatta Park</em></li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Summer, Fall &amp; Holidays</h3>
+            <ul>
+              <li>4th of July Orchestra Concert <em>Peacock Park</em></li>
+              <li>Coconut Grove Summer Craft Beer Festival <em>August</em></li>
+              <li>Coconut Grove Pumpkin Patch Festival <em>October</em></li>
+              <li>Grovetoberfest <em>October · Regatta Park</em></li>
+              <li>South Florida Seafood Festival <em>November · Regatta Park</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOCATION -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Where You Are</span>
+        <h2>The Grove sits<br/>at the <em>center of everything.</em></h2>
+        <p>Coconut Grove's strategic location near Miami's beaches, airport, and downtown area provides residents and visitors with easy access to sun-soaked shores, convenient travel connections, and vibrant metropolitan amenities — without feeling like a part of any of them.</p>
+
+        <div class="nb-grid-2">
+          <div class="nb-cell">
+            <h3>Local Hubs</h3>
+            <ul>
+              <li>Brickell · 3 miles</li>
+              <li>Coral Gables · 3 miles</li>
+              <li>Downtown Miami · 5 miles</li>
+              <li>Key Biscayne · 7 miles</li>
+              <li>Miami Beach · 8 miles</li>
+              <li>Miami International Airport · 8 miles</li>
+              <li>Bal Harbour · 14 miles</li>
+            </ul>
+          </div>
+          <div class="nb-cell">
+            <h3>Other Cities</h3>
+            <ul>
+              <li>Fort Lauderdale · 25 miles</li>
+              <li>Boca Raton · 45 miles</li>
+              <li>Key Largo · 60 miles</li>
+              <li>West Palm Beach · 70 miles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BROCHURE REQUEST -->
+      <div class="quality-band" style="background: var(--paper); color: var(--ink); border-left: 3px solid var(--ocean);">
+        <span class="nb-section-rule" style="color: var(--ocean); border-color: var(--line);">Want the Printed Guide?</span>
+        <h2 style="color: var(--ink);">Request the full Coconut Grove<br/>brochure as a <em style="color: var(--ocean);">printed-quality PDF.</em></h2>
+        <p style="color: var(--ink);">I've prepared a longer-form, printed-quality brochure with photography, market context, and the full neighborhood breakdown — designed for in-person consultations and reading offline. It's not posted publicly. Email me below and I'll send it directly.</p>
+        <p style="margin-top: 24px;">
+          <a href="mailto:Tayreen@RileySmithGroup.com?subject=Request%20%E2%80%94%20Coconut%20Grove%20Neighborhood%20Brochure&amp;body=Hi%20Tayreen%2C%0A%0AI%27d%20love%20to%20receive%20the%20Coconut%20Grove%20neighborhood%20brochure.%0A%0AThank%20you%21%0A" class="btn btn-primary">Request the Coconut Grove Brochure</a>
+        </p>
+      </div>
+
+      <!-- FAQ -->
+      <div class="nb-section">
+        <span class="nb-section-rule">Common Questions</span>
+        <h2>What people ask<br/>about <em>The Grove.</em></h2>
+        <div class="nb-faq">
+          <details>
+            <summary>What is Coconut Grove known for?</summary>
+            <div class="nb-faq-a"><p>Coconut Grove is Miami's oldest neighborhood, established in the 1870s, and is defined by its mature oak and banyan tree canopy, bayfront access, historic architecture, and walkable Grove Village Center. It is home to Vizcaya Museum and Gardens, the Coconut Grove Sailing Club, Coral Reef Yacht Club, Biscayne Bay Yacht Club, Peacock Park, Kennedy Park, Regatta Park, and the Barnacle Historic State Park. The neighborhood is also home to independent schools including Ransom Everglades and Carrollton School of the Sacred Heart.</p></div>
+          </details>
+          <details>
+            <summary>What makes Coconut Grove different from other Miami neighborhoods?</summary>
+            <div class="nb-faq-a"><p>Coconut Grove is distinct because of its tropical canopy that cannot be quickly replicated, its bohemian and artistic character (rooted in the neighborhood's 1960s history), its waterfront orientation toward Biscayne Bay, lower-profile architecture set on deeper lots, and a buyer pool that includes international, artistic, and tech-industry residents drawn to the neighborhood's quieter pace.</p></div>
+          </details>
+          <details>
+            <summary>What schools are located in Coconut Grove?</summary>
+            <div class="nb-faq-a"><p>Independent schools in Coconut Grove include Ransom Everglades School (grades 6–12), Carrollton School of the Sacred Heart (Pre-K to 12), St. Stephen's Episcopal Day School, Coconut Grove Montessori School, Plymouth Preschool of the Arts, MCA Academy, and Vanguard School of Coconut Grove. Public schools include Coconut Grove Elementary, Frances S. Tucker Elementary, and George Washington Carver Middle School. The University of Miami in adjacent Coral Gables is within minutes of the Grove. <em>School information is provided for general reference; please verify school assignments and ratings independently through dadeschools.net or GreatSchools.org.</em></p></div>
+          </details>
+          <details>
+            <summary>Is Coconut Grove walkable?</summary>
+            <div class="nb-faq-a"><p>Yes. The Grove Village Center is one of the most walkable areas in Miami. CocoWalk, Commodore Plaza, Peacock Park, and the marina district are all walkable from each other, and the residential streets surrounding the village are golf-cart friendly and tree-shaded. Many Grove residents move primarily on foot or by golf cart within the neighborhood.</p></div>
+          </details>
+          <details>
+            <summary>What annual events happen in Coconut Grove?</summary>
+            <div class="nb-faq-a"><p>The Coconut Grove Arts Festival (February) is the marquee event, drawing visitors from across the country. The Grove also hosts the King Mango Strut Parade (January), the Coconut Grove Food and Wine Festival (March), Great Taste of the Grove (April), Miami Kids Magazine Family Fest (June), 4th of July Orchestra Concert at Peacock Park, Coconut Grove Summer Craft Beer Festival (August), Pumpkin Patch Festival and Grovetoberfest (October), and the South Florida Seafood Festival (November).</p></div>
+          </details>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="nb-cta">
+        <p class="eyebrow blue">Considering The Grove?</p>
+        <h2>Let's have a real conversation<br/>about <em>your move.</em></h2>
+        <p>Whether you're buying, selling, or evaluating Coconut Grove against another neighborhood — the first call is always free, always candid, and informed by an advisor with twelve years of Grove transactions under the canopy.</p>
+        <div style="margin-top: 18px;">
+          <a href="/#contact" class="btn btn-primary">Schedule a Private Consultation</a>
+          <a href="/contract-qa/" class="btn btn-ghost">Read the Florida Contract Q&amp;A</a>
+        </div>
+        <p style="margin-top: 24px; font-size: 13px; color: var(--muted); letter-spacing: 0.04em;">Or just <a href="sms:+19542438117?body=Hi%20Tayreen%21%20I%20just%20read%20your%20Coconut%20Grove%20guide%20and%20would%20love%20to%20chat%20about%20the%20Grove." style="color: var(--ocean); border-bottom: 1px solid var(--ocean); padding-bottom: 1px;">shoot me a quick text</a> — I respond personally.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">Tayreen Nelson</p>
+        <p class="footer-team">Riley Smith Group at Compass</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/#sales">Sales</a>
+        <a href="/#strategy">Strategy</a>
+        <a href="/contract-qa/">Contract Q&amp;A</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+19542438117">(954) 243-8117</a>
+        <a href="mailto:Tayreen@RileySmithGroup.com">Tayreen@RileySmithGroup.com</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="/images/rsg-compass-white.png" alt="Riley Smith Group at Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <img src="/images/law-grads-white.svg" alt="Law Grads of Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <div class="eho-badge" aria-label="Equal Housing Opportunity">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" role="img" focusable="false">
+          <rect x="2" y="2" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L52 28 L48 28 L48 50 L36 50 L36 36 L28 36 L28 50 L16 50 L16 28 L12 28 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <text x="32" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">EQUAL HOUSING</text>
+          <text x="32" y="63" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">OPPORTUNITY</text>
+        </svg>
+        <span class="eho-label">Equal Housing<br/>Opportunity</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Tayreen Nelson is a real estate sales associate affiliated with Compass Florida, LLC d/b/a Compass, a licensed real estate broker, and a member of Riley Smith Group at Compass. All material is intended for informational real estate marketing purposes only. Nothing herein shall be construed as legal, tax, accounting, or other professional advice outside the scope of real estate brokerage services.
+    </p>
+    <p class="footer-copy">© <span id="year">2026</span> Tayreen Nelson · Riley Smith Group at Compass · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('mobileNav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        var open = !nav.hasAttribute('hidden');
+        if(open){ nav.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); btn.classList.remove('is-open'); }
+        else { nav.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); btn.classList.add('is-open'); }
+      });
+    })();
+  </script>
+</body>
+</html>

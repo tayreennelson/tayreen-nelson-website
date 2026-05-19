@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#034A7D" />
+
+  <title>Miami Neighborhood Guides · Coral Gables &amp; Coconut Grove | Tayreen Nelson, Riley Smith Group at Compass</title>
+  <meta name="description" content="Insider guides to Miami's premier residential neighborhoods — Coral Gables, Coconut Grove, and more. Architecture, schools, restaurants, parks, and the community details that define each neighborhood. By Tayreen Nelson, Riley Smith Group at Compass." />
+  <meta name="keywords" content="Miami neighborhood guide, Coral Gables neighborhood guide, Coconut Grove neighborhood guide, living in Miami, Miami luxury real estate, Tayreen Nelson neighborhoods" />
+  <link rel="canonical" href="https://tayreennelson.com/neighborhoods/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tayreen Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="Miami Neighborhood Guides · Coral Gables &amp; Coconut Grove" />
+  <meta property="og:description" content="Insider guides to Miami's premier residential neighborhoods. By Tayreen Nelson, Riley Smith Group at Compass." />
+  <meta property="og:url" content="https://tayreennelson.com/neighborhoods/" />
+  <meta property="og:image" content="https://tayreennelson.com/images/micanopy-pool.jpg" />
+
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    .hub-hero { background: var(--paper); padding: clamp(120px, 16vh, 180px) clamp(20px, 4vw, 56px) clamp(64px, 9vh, 100px); border-bottom: 1px solid var(--line); }
+    .hub-hero-inner { max-width: var(--content-max); margin: 0 auto; }
+    .hub-breadcrumb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.28em; color: var(--muted); margin-bottom: 28px; }
+    .hub-breadcrumb a { color: var(--ocean); border-bottom: 1px solid transparent; transition: border-color .2s var(--easing); }
+    .hub-breadcrumb a:hover { border-bottom-color: var(--ocean); }
+    .hub-breadcrumb-sep { margin: 0 12px; opacity: 0.5; }
+    .hub-hero h1 { font-size: clamp(42px, 6vw, 88px); margin: 14px 0 0; line-height: 1.02; max-width: 900px; }
+    .hub-hero h1 em { font-style: italic; color: var(--ocean); font-weight: 300; }
+    .hub-hero-lede { margin-top: 32px; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.7; color: var(--muted); max-width: 760px; font-weight: 300; }
+
+    .hub-content { max-width: var(--content-max); margin: 0 auto; padding: clamp(72px, 10vh, 120px) clamp(20px, 4vw, 56px); }
+
+    .hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    @media (max-width: 900px) { .hub-grid { grid-template-columns: 1fr; } }
+
+    .hub-card {
+      background: white;
+      border: 1px solid var(--line);
+      padding: clamp(36px, 4vw, 56px);
+      transition: border-color .25s var(--easing), transform .25s var(--easing), box-shadow .25s var(--easing);
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+    }
+    .hub-card:hover { border-color: var(--ocean); transform: translateY(-2px); box-shadow: 0 24px 56px -32px rgba(2,31,56,0.18); }
+    .hub-card-rule { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.28em; color: var(--ocean); margin-bottom: 24px; }
+    .hub-card h2 { font-size: clamp(28px, 3vw, 42px); margin: 0 0 16px; line-height: 1.05; }
+    .hub-card h2 em { font-style: italic; color: var(--ocean); font-weight: 300; }
+    .hub-card p { font-size: 16px; line-height: 1.75; color: var(--muted); margin: 0 0 24px; font-weight: 300; }
+    .hub-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 28px; }
+    .hub-card-tags span { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-weight: 500; }
+    .hub-card-link { margin-top: auto; font-size: 12px; text-transform: uppercase; letter-spacing: 0.22em; font-weight: 500; color: var(--ocean); border-bottom: 1px solid var(--ocean); padding-bottom: 4px; align-self: flex-start; }
+    .hub-card-link:hover { opacity: 0.7; }
+
+    .hub-card-coming { background: var(--paper); border-style: dashed; }
+    .hub-card-coming .hub-card-rule { color: var(--muted); }
+    .hub-card-coming h2 { color: var(--muted); }
+    .hub-card-coming h2 em { color: var(--muted); }
+
+    .hub-cta {
+      background: var(--ocean-ink);
+      color: white;
+      text-align: center;
+      padding: clamp(60px, 9vw, 100px) clamp(28px, 4vw, 56px);
+      margin-top: clamp(60px, 8vh, 100px);
+      border-radius: 2px;
+    }
+    .hub-cta h2 { color: white; margin-bottom: 16px; font-size: clamp(28px, 3.4vw, 46px); line-height: 1.1; }
+    .hub-cta h2 em { color: rgba(255,255,255,0.7); font-style: italic; font-weight: 300; }
+    .hub-cta p { color: rgba(255,255,255,0.78); max-width: 560px; margin: 0 auto 28px; font-size: 17px; line-height: 1.7; font-weight: 300; }
+    .hub-cta .btn { margin: 0 6px 10px; }
+    .hub-cta .btn-primary { background: white; color: var(--ink); border-color: white; }
+    .hub-cta .btn-primary:hover { background: var(--ocean); border-color: var(--ocean); color: white; }
+    .hub-cta .btn-ghost { color: white; border-color: rgba(255,255,255,0.45); }
+    .hub-cta .btn-ghost:hover { background: white; color: var(--ink); border-color: white; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Miami Neighborhood Guides",
+    "description": "Insider guides to Miami's premier residential neighborhoods, written by Tayreen Nelson of the Riley Smith Group at Compass.",
+    "url": "https://tayreennelson.com/neighborhoods/",
+    "author": { "@type": "Person", "name": "Tayreen Nelson", "url": "https://tayreennelson.com/" },
+    "isPartOf": { "@type": "WebSite", "name": "Tayreen Nelson · Riley Smith Group at Compass", "url": "https://tayreennelson.com/" },
+    "hasPart": [
+      { "@type": "Article", "name": "Living in Coral Gables", "url": "https://tayreennelson.com/neighborhoods/coral-gables/" },
+      { "@type": "Article", "name": "Living in Coconut Grove", "url": "https://tayreennelson.com/neighborhoods/coconut-grove/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tayreennelson.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Neighborhoods", "item": "https://tayreennelson.com/neighborhoods/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" id="siteHeader">
+    <a class="brand" href="/" aria-label="Tayreen Nelson — Riley Smith Group at Compass — home">
+      <span class="brand-name">Tayreen Nelson</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-sub">Riley Smith Group at Compass</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#sales">Sales</a>
+      <a href="/#strategy">Strategy</a>
+      <a href="/contract-qa/">Contract Q&amp;A</a>
+      <a href="./" aria-current="page">Neighborhoods</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="/#about">About</a>
+    <a href="/#sales">Sales</a>
+    <a href="/#strategy">Strategy</a>
+    <a href="/contract-qa/">Contract Q&amp;A</a>
+    <a href="./" aria-current="page">Neighborhoods</a>
+    <a href="/#reviews">Reviews</a>
+    <a href="/#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <section class="hub-hero">
+      <div class="hub-hero-inner">
+        <p class="hub-breadcrumb"><a href="/">Home</a><span class="hub-breadcrumb-sep">/</span><span>Neighborhoods</span></p>
+        <p class="eyebrow blue">Miami Neighborhood Guides</p>
+        <h1>The neighborhoods<br/><em>I live, work, and listen in.</em></h1>
+        <p class="hub-hero-lede">Coral Gables and Coconut Grove are sister neighborhoods with distinct personalities — and the difference matters when you're deciding where to live, sell, or invest. These guides go beyond the brochure: real local detail, school context, community traditions, and the texture of daily life as a resident.</p>
+      </div>
+    </section>
+
+    <div class="hub-content">
+
+      <div class="hub-grid">
+
+        <a href="coral-gables/" class="hub-card">
+          <p class="hub-card-rule">The City Beautiful</p>
+          <h2>Coral Gables<br/><em>by a resident.</em></h2>
+          <p>A century-old planned community defined by Mediterranean architecture, mature tree canopy, a deep roster of public and private schools, walkable Miracle Mile, the Biltmore, the Venetian Pool, the A.I.R. inclusive recreation program, and the small-town details residents talk about.</p>
+          <div class="hub-card-tags">
+            <span>Mediterranean Revival</span>
+            <span>Public &amp; Private Schools</span>
+            <span>Walkable Downtown</span>
+            <span>University of Miami</span>
+          </div>
+          <span class="hub-card-link">Read the Coral Gables Guide →</span>
+        </a>
+
+        <a href="coconut-grove/" class="hub-card">
+          <p class="hub-card-rule">Miami's Oldest</p>
+          <h2>Coconut Grove<br/><em>under the canopy.</em></h2>
+          <p>Miami's oldest neighborhood, anchored by its mature oak and banyan canopy, bayfront marinas, golf-cart-friendly streets, Vizcaya, Peacock Park, the Sailing Club, and the bohemian-meets-luxury rhythm that defines Grove life.</p>
+          <div class="hub-card-tags">
+            <span>Waterfront Living</span>
+            <span>Old Grove Canopy</span>
+            <span>Walkable Village</span>
+            <span>Ransom &amp; Carrollton</span>
+          </div>
+          <span class="hub-card-link">Read the Coconut Grove Guide →</span>
+        </a>
+
+        <div class="hub-card hub-card-coming">
+          <p class="hub-card-rule">Coming Soon</p>
+          <h2>Pinecrest<br/><em>guide.</em></h2>
+          <p>Acre-plus residential settings, tree-lined streets, and South Florida estate properties. Guide in development — published RSG brochure available on request.</p>
+        </div>
+
+        <div class="hub-card hub-card-coming">
+          <p class="hub-card-rule">Coming Soon</p>
+          <h2>South Miami<br/><em>guide.</em></h2>
+          <p>The City of Pleasant Living — walkable Sunset Drive, mid-century residences, and small-town energy with city convenience. Guide in development — published RSG brochure available on request.</p>
+        </div>
+
+      </div>
+
+      <!-- BROCHURE REQUEST -->
+      <div style="background: var(--ivory); border-left: 3px solid var(--ocean); padding: clamp(50px, 7vw, 80px) clamp(28px, 4vw, 56px); margin: clamp(40px, 6vh, 72px) 0;">
+        <p class="eyebrow blue">Printed Brochures · Available on Request</p>
+        <h2 style="font-size: clamp(28px, 3.4vw, 46px); margin: 14px 0 22px; line-height: 1.1;">Want the printed neighborhood guide<br/>delivered to your <em style="font-style: italic; color: var(--ocean); font-weight: 300;">inbox?</em></h2>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--ink); max-width: 720px; margin: 0 0 28px; font-weight: 300;">In addition to these online guides, I've prepared longer-form printed-quality brochures for Coral Gables and Coconut Grove — designed for in-person consultations and offline reading. They're not posted publicly. Email me below and I'll send the one you'd like directly.</p>
+        <a href="mailto:Tayreen@RileySmithGroup.com?subject=Request%20%E2%80%94%20Neighborhood%20Brochure&amp;body=Hi%20Tayreen%2C%0A%0AI%27d%20love%20to%20receive%20the%20following%20neighborhood%20brochure%28s%29%3A%0A%0A__%20Coral%20Gables%0A__%20Coconut%20Grove%0A%0AThank%20you%21%0A" class="btn btn-primary" style="margin-right: 10px;">Request a Brochure</a>
+      </div>
+
+      <div class="hub-cta">
+        <p class="eyebrow" style="color: rgba(255,255,255,0.78);">Considering Miami?</p>
+        <h2>Not sure which neighborhood<br/><em>is the right fit?</em></h2>
+        <p>That's worth a conversation. Most clients come in leaning toward one and end up choosing another once we walk through priorities, schools, lifestyle, and inventory together. The first call is always free, always candid.</p>
+        <div style="margin-top: 18px;">
+          <a href="/#contact" class="btn btn-primary">Schedule a Private Consultation</a>
+          <a href="/contract-qa/" class="btn btn-ghost">Read the Contract Q&amp;A</a>
+        </div>
+        <p style="margin-top: 24px; font-size: 13px; color: rgba(255,255,255,0.78); letter-spacing: 0.04em;">Or just <a href="sms:+19542438117?body=Hi%20Tayreen%21%20I%27m%20considering%20a%20Miami%20neighborhood%20and%20would%20love%20to%20chat." style="color: white; border-bottom: 1px solid rgba(255,255,255,0.6); padding-bottom: 1px;">shoot me a quick text</a> — I respond personally.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">Tayreen Nelson</p>
+        <p class="footer-team">Riley Smith Group at Compass</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/#sales">Sales</a>
+        <a href="/#strategy">Strategy</a>
+        <a href="/contract-qa/">Contract Q&amp;A</a>
+        <a href="./">Neighborhoods</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+19542438117">(954) 243-8117</a>
+        <a href="mailto:Tayreen@RileySmithGroup.com">Tayreen@RileySmithGroup.com</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="/images/rsg-compass-white.png" alt="Riley Smith Group at Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <img src="/images/law-grads-white.svg" alt="Law Grads of Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <div class="eho-badge" aria-label="Equal Housing Opportunity">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" role="img" focusable="false">
+          <rect x="2" y="2" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L52 28 L48 28 L48 50 L36 50 L36 36 L28 36 L28 50 L16 50 L16 28 L12 28 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <text x="32" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">EQUAL HOUSING</text>
+          <text x="32" y="63" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">OPPORTUNITY</text>
+        </svg>
+        <span class="eho-label">Equal Housing<br/>Opportunity</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Tayreen Nelson is a real estate sales associate affiliated with Compass Florida, LLC d/b/a Compass, a licensed real estate broker, and a member of Riley Smith Group at Compass. All material is intended for informational real estate marketing purposes only. Nothing herein shall be construed as legal, tax, accounting, or other professional advice outside the scope of real estate brokerage services.
+    </p>
+    <p class="footer-copy">© <span id="year">2026</span> Tayreen Nelson · Riley Smith Group at Compass · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('mobileNav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        var open = !nav.hasAttribute('hidden');
+        if(open){ nav.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); btn.classList.remove('is-open'); }
+        else { nav.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); btn.classList.add('is-open'); }
+      });
+    })();
+  </script>
+</body>
+</html>
