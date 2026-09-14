@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#034A7D" />
+
+  <title>The Wave House · 66 Samana Drive, Coconut Grove | Private First Look</title>
+  <meta name="description" content="The Wave House — a new-construction residence at 66 Samana Drive in Coconut Grove, entering its final stages. Join the private first-look list and see it before it is publicly marketed." />
+  <meta name="keywords" content="Wave House Coconut Grove, 66 Samana Drive, new construction Coconut Grove, Coconut Grove modern home, Miami new construction luxury, Billskoog Nelson" />
+  <link rel="canonical" href="https://tayreennelson.com/wave-house/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tayreen Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="The Wave House · Coconut Grove · Private First Look" />
+  <meta property="og:description" content="A new-construction residence taking shape at 66 Samana Drive. Join the private first-look list." />
+  <meta property="og:url" content="https://tayreennelson.com/wave-house/" />
+  <meta property="og:image" content="https://tayreennelson.com/images/wave-house-rendering.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Wave House · Coconut Grove · Private First Look" />
+  <meta name="twitter:description" content="New construction at 66 Samana Drive, Coconut Grove. Join the private first-look list." />
+  <meta name="twitter:image" content="https://tayreennelson.com/images/wave-house-rendering.jpg" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* ── Wave House page ── */
+    .wh-hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: flex-end;
+      padding: clamp(100px, 14vh, 160px) clamp(20px, 4vw, 56px) clamp(56px, 8vh, 90px);
+      background: var(--ocean-ink);
+      overflow: hidden;
+    }
+    .wh-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: url('/images/wave-house-rendering.jpg');
+      background-size: cover;
+      background-position: center 42%;
+      opacity: 0.92;
+    }
+    .wh-hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(2,31,56,0.74) 0%, rgba(2,31,56,0.34) 42%, rgba(2,31,56,0.04) 72%),
+        linear-gradient(to bottom, rgba(2,31,56,0.46) 0%, rgba(2,31,56,0.20) 34%, rgba(2,31,56,0.90) 100%);
+    }
+    .wh-hero-inner { position: relative; z-index: 2; max-width: var(--content-max); margin: 0 auto; width: 100%; }
+    .wh-eyebrow {
+      font-size: 11px; font-weight: 500; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: rgba(255,255,255,0.82);
+      margin-bottom: 20px;
+    }
+    .wh-hero h1 {
+      color: #fff; font-size: clamp(44px, 6.4vw, 92px); line-height: 1.0;
+      letter-spacing: var(--serif-tracked); margin: 0 0 18px; font-weight: 300;
+    }
+    .wh-address {
+      color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.3vw, 17px);
+      letter-spacing: 0.22em; text-transform: uppercase; font-weight: 300; margin: 0 0 28px;
+    }
+    .wh-hero-lede {
+      color: rgba(255,255,255,0.92); font-size: clamp(16px, 1.3vw, 19px);
+      line-height: 1.7; font-weight: 300; max-width: 560px; margin: 0 0 34px;
+    }
+    .wh-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+    .wh-btn {
+      display: inline-block; padding: 16px 34px; font-size: 12px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: var(--button-tracked);
+      background: #fff; color: var(--ocean-ink); border: 1px solid #fff;
+      transition: background .25s var(--easing), color .25s var(--easing);
+    }
+    .wh-btn:hover { background: transparent; color: #fff; }
+    .wh-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.55); }
+    .wh-btn-ghost:hover { background: #fff; color: var(--ocean-ink); }
+
+    /* status strip */
+    .wh-status {
+      background: var(--ivory);
+      border-bottom: 1px solid var(--line-soft);
+      padding: clamp(28px, 4vh, 40px) clamp(20px, 4vw, 56px);
+    }
+    .wh-status-inner {
+      max-width: var(--content-max); margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 28px;
+    }
+    .wh-stat .k {
+      font-size: 10.5px; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked);
+      color: var(--ocean); margin-bottom: 9px;
+    }
+    .wh-stat .v { font-size: clamp(16px, 1.5vw, 19px); color: var(--ink); font-weight: 300; line-height: 1.45; }
+
+    /* body */
+    .wh-section { max-width: var(--content-narrow); margin: 0 auto; padding: clamp(66px, 9vh, 104px) clamp(20px, 4vw, 56px); }
+    .wh-rule {
+      font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked);
+      color: var(--ocean); margin-bottom: 30px; padding-bottom: 14px; border-bottom: 1px solid var(--line); display: block;
+    }
+    .wh-section h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.12; color: var(--ink); font-weight: 300; margin: 0 0 24px; }
+    .wh-section p { font-size: 16.5px; line-height: 1.78; color: var(--muted); font-weight: 300; margin: 0 0 20px; max-width: 700px; }
+    .wh-section p strong { color: var(--ink); font-weight: 500; }
+
+    /* gallery */
+    .wh-gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px; margin: 44px 0 8px;
+    }
+    .wh-gallery figure { margin: 0; overflow: hidden; background: var(--ivory); }
+    .wh-gallery img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4; display: block; transition: transform .6s var(--easing); }
+    .wh-gallery figure:hover img { transform: scale(1.04); }
+    .wh-caption { font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-top: 26px; }
+
+    /* RSVP */
+    .wh-rsvp { background: var(--ocean-ink); color: #fff; padding: clamp(66px, 9vh, 110px) clamp(20px, 4vw, 56px); }
+    .wh-rsvp-inner { max-width: 780px; margin: 0 auto; }
+    .wh-rsvp .wh-rule { color: rgba(255,255,255,0.72); border-bottom-color: rgba(255,255,255,0.18); }
+    .wh-rsvp h2 { color: #fff; font-size: clamp(30px, 3.6vw, 50px); font-weight: 300; line-height: 1.1; margin: 0 0 22px; }
+    .wh-rsvp p { color: rgba(255,255,255,0.8); font-size: 16.5px; line-height: 1.78; font-weight: 300; max-width: 640px; }
+    .wh-form { margin-top: 44px; }
+    .wh-form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+    .wh-field-full { grid-column: 1 / -1; }
+    .wh-form label {
+      display: block; font-size: 10.5px; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: rgba(255,255,255,0.68); margin-bottom: 10px;
+    }
+    .wh-form input, .wh-form select, .wh-form textarea {
+      width: 100%; background: transparent; border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.28);
+      color: #fff; font-family: inherit; font-size: 16px; font-weight: 300;
+      padding: 10px 0; border-radius: 0; transition: border-color .25s var(--easing);
+    }
+    .wh-form input:focus, .wh-form select:focus, .wh-form textarea:focus {
+      outline: none; border-bottom-color: #fff;
+    }
+    .wh-form select option { background: var(--ocean-ink); color: #fff; }
+    .wh-form textarea { resize: vertical; }
+    .wh-submit {
+      margin-top: 40px; width: 100%; padding: 18px 34px; cursor: pointer;
+      background: #fff; color: var(--ocean-ink); border: 1px solid #fff;
+      font-family: inherit; font-size: 12px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: var(--button-tracked);
+      transition: background .25s var(--easing), color .25s var(--easing);
+    }
+    .wh-submit:hover { background: transparent; color: #fff; }
+    .wh-form-note { font-size: 12.5px; color: rgba(255,255,255,0.55); margin-top: 20px; line-height: 1.6; }
+
+    /* team credits */
+    .wh-team { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 30px; margin-top: 40px; }
+    .wh-team .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked); color: var(--ocean); margin-bottom: 9px; }
+    .wh-team .v { font-size: 16px; color: var(--ink); font-weight: 300; }
+
+    .wh-team-note {
+      margin-top: 40px !important; padding: 26px 30px;
+      background: var(--ivory); border-left: 2px solid var(--ocean);
+      font-size: 15px !important; line-height: 1.75 !important; max-width: none !important;
+    }
+    .wh-team-note strong { color: var(--ink); font-weight: 500; }
+    .wh-team-note a { color: var(--ocean); border-bottom: 1px solid var(--ocean); }
+
+    .wh-follow {
+      margin-top: 26px !important; font-size: 14px !important; color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    .wh-follow a { color: var(--ocean); border-bottom: 1px solid var(--ocean); }
+
+    .wh-legal {
+      background: var(--paper); border-top: 1px solid var(--line-soft);
+      padding: 34px clamp(20px, 4vw, 56px);
+    }
+    .wh-legal p {
+      max-width: var(--content-max); margin: 0 auto; font-size: 11.5px;
+      line-height: 1.7; color: var(--muted); letter-spacing: 0.02em;
+    }
+    @media (max-width: 640px) {
+      .wh-hero { min-height: 78vh; }
+      .wh-hero-cta .wh-btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" id="siteHeader">
+    <a class="brand" href="/" aria-label="Tayreen Nelson — Riley Smith Group at Compass — return to home">
+      <span class="brand-name">Tayreen Nelson</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-sub">Riley Smith Group at Compass</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/why-tayreen/">Why Tayreen</a>
+      <a href="/#sales">Sales</a>
+      <a href="/new-construction/">New Construction</a>
+      <a href="/contract-qa/">Contract Q&amp;A</a>
+      <a href="/neighborhoods/">Neighborhoods</a>
+      <a href="/notebook/">Notebook</a>
+      <a href="/#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="/#about">About</a>
+    <a href="/why-tayreen/">Why Tayreen</a>
+    <a href="/#sales">Sales</a>
+    <a href="/new-construction/">New Construction</a>
+    <a href="/contract-qa/">Contract Q&amp;A</a>
+    <a href="/neighborhoods/">Neighborhoods</a>
+    <a href="/notebook/">Notebook</a>
+    <a href="/#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <section class="wh-hero">
+      <div class="wh-hero-inner">
+        <p class="wh-eyebrow">Coming Soon · Coconut Grove</p>
+        <h1>The Wave House</h1>
+        <p class="wh-address">66 Samana Drive · Coconut Grove</p>
+        <p class="wh-hero-lede">
+          A new-construction residence entering its final stages — and a private First Look
+          for a small group of buyers and advisors before it reaches the open market.
+        </p>
+        <div class="wh-hero-cta">
+          <a href="#rsvp" class="wh-btn">Join the First-Look List</a>
+          <a href="/new-construction/" class="wh-btn wh-btn-ghost">About the Partnership</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wh-status">
+      <div class="wh-status-inner">
+        <div class="wh-stat">
+          <p class="k">Residence</p>
+          <p class="v">5 BD · 7 BA · 4,747 SF</p>
+        </div>
+        <div class="wh-stat">
+          <p class="k">Lot</p>
+          <p class="v">0.22 Acres</p>
+        </div>
+        <div class="wh-stat">
+          <p class="k">Status</p>
+          <p class="v">Final stages of construction</p>
+        </div>
+        <div class="wh-stat">
+          <p class="k">Anticipated Completion</p>
+          <p class="v">October 2026</p>
+        </div>
+        <div class="wh-stat">
+          <p class="k">First Look</p>
+          <p class="v">Early October · Private list</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wh-section">
+      <span class="wh-rule">The Residence</span>
+      <h2>The curves it is named for.</h2>
+      <p>
+        The Wave House takes its name from a roofline that folds rather than meets — a cantilevered
+        plane that carries over full-height glass and out toward the pool deck. Inside, a floating
+        stair is set against a wall of full-height stone, and a warm wood soffit runs from the entry
+        through to the terrace, tying the interior and exterior into a single gesture.
+      </p>
+      <p>
+        It is a <strong>ground-up new-construction residence</strong> — not a renovation — designed and
+        built for the way people actually live in the Grove: indoor-outdoor, private behind mature
+        landscaping, and finished to a standard that holds up to daylight from every direction.
+      </p>
+
+      <div class="wh-gallery">
+        <figure><img src="/images/wave-house-exterior.jpg" alt="The Wave House exterior — cantilevered roofline over full-height glass" loading="lazy" /></figure>
+        <figure><img src="/images/wave-house-stair.jpg" alt="Floating stair against a full-height stone wall" loading="lazy" /></figure>
+        <figure><img src="/images/wave-house-soffit.jpg" alt="Wood soffit extending from the interior out over the terrace" loading="lazy" /></figure>
+        <figure><img src="/images/wave-house-entry.jpg" alt="Entry under the wood soffit during final construction" loading="lazy" /></figure>
+      </div>
+      <p class="wh-caption">Photographed on site during construction · September 2026</p>
+    </section>
+
+    <section class="wh-section" style="padding-top:0;">
+      <span class="wh-rule">Project Team</span>
+      <div class="wh-team">
+        <div><p class="k">Architect</p><p class="v">Ginard Studio</p></div>
+        <div><p class="k">Contractor</p><p class="v">Billskog Construction</p></div>
+        <div><p class="k">Developer</p><p class="v">Urbane Capital LLC</p></div>
+        <div><p class="k">Representation</p><p class="v">Billskoog &amp; Nelson<br />Riley Smith Group at Compass</p></div>
+      </div>
+
+      <p class="wh-team-note">
+        <strong>Want to see the standard of finish before this one is done?</strong> The same
+        development team — Urbane Capital with Billskog Construction — completed
+        <a href="/new-construction/">1701 Micanopy Avenue</a> in the Grove earlier this year. It is
+        on the market now, and it is the closest thing to a walkable preview of how The Wave House
+        will be finished.
+      </p>
+
+      <p class="wh-follow">
+        Build updates are posted as the project moves toward completion —
+        <a href="https://www.instagram.com/vcbillskoog/" target="_blank" rel="noopener noreferrer">@vcbillskoog</a>.
+      </p>
+    </section>
+
+    <section class="wh-rsvp" id="rsvp">
+      <div class="wh-rsvp-inner">
+        <span class="wh-rule">Private First Look</span>
+        <h2>Ask to see it first.</h2>
+        <p>
+          We are keeping a private list. The Wave House will be shown to that list before it is
+          publicly marketed — and if you are on it, you hear from us directly rather than finding
+          it on a portal. We expect to be walking it in early October and will reach out with the
+          date once it is set.
+        </p>
+        <p>
+          There is no obligation in being on the list, and no automated follow-up. Add your name
+          and we will tell you when there is something worth seeing.
+        </p>
+
+        <form class="wh-form"
+              action="https://formspree.io/f/xwvyjjek"
+              method="POST"
+              aria-label="Join the private first-look list for The Wave House">
+          <input type="hidden" name="_subject" value="Wave House — First Look list request" />
+          <input type="hidden" name="source" value="tayreennelson.com/wave-house" />
+
+          <div class="wh-form-grid">
+            <div>
+              <label for="rsvp-name">Name</label>
+              <input id="rsvp-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="rsvp-email">Email</label>
+              <input id="rsvp-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label for="rsvp-phone">Phone</label>
+              <input id="rsvp-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div>
+              <label for="rsvp-role">I am</label>
+              <select id="rsvp-role" name="role">
+                <option>A prospective buyer</option>
+                <option>An agent representing a buyer</option>
+                <option>An advisor (attorney, family office, wealth manager)</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="wh-field-full">
+              <label for="rsvp-timing">Timing</label>
+              <select id="rsvp-timing" name="timing">
+                <option>Actively looking now</option>
+                <option>Within the next 6 months</option>
+                <option>Within the next 12 months</option>
+                <option>Watching the Grove market</option>
+              </select>
+            </div>
+            <div class="wh-field-full">
+              <label for="rsvp-message">Anything we should know (optional)</label>
+              <textarea id="rsvp-message" name="message" rows="4" placeholder="What you're looking for, or who you represent."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="wh-submit">Add Me to the List</button>
+          <p class="wh-form-note">
+            Requests are reviewed individually. Your information is kept private, is never sold or
+            shared, and is used only to reach you about this residence.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <div class="wh-legal">
+      <p>
+        The Wave House is a residence under construction. Renderings are an artist's conception and
+        are intended to convey design intent only; finishes, materials, landscaping, furnishings,
+        dimensions, and completion timing are subject to change and should not be relied upon as a
+        representation of the finished residence. Photographs were taken during active construction.
+        Anticipated completion dates are estimates and are not guaranteed. This is not an offer to
+        sell or a solicitation to buy where prohibited by law. Pricing and availability are subject
+        to change without notice.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">Tayreen Nelson</p>
+        <p class="footer-team">Riley Smith Group at Compass</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/#about">About</a>
+        <a href="/why-tayreen/">Why Tayreen</a>
+        <a href="/#sales">Sales</a>
+        <a href="/new-construction/">New Construction</a>
+        <a href="/contract-qa/">Contract Q&amp;A</a>
+        <a href="/neighborhoods/">Neighborhoods</a>
+        <a href="/notebook/">Notebook</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+19542438117">(954) 243-8117</a>
+        <a href="mailto:Tayreen@RileySmithGroup.com">Tayreen@RileySmithGroup.com</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="/images/rsg-compass-white.png" alt="Riley Smith Group at Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <img src="/images/law-grads-white.svg" alt="Law Grads of Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <div class="eho-badge" aria-label="Equal Housing Opportunity">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" role="img" focusable="false">
+          <rect x="2" y="2" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L52 28 L48 28 L48 50 L36 50 L36 36 L28 36 L28 50 L16 50 L16 28 L12 28 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <text x="32" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">EQUAL HOUSING</text>
+          <text x="32" y="63" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">OPPORTUNITY</text>
+        </svg>
+        <span class="eho-label">Equal Housing<br/>Opportunity</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Tayreen Nelson is a real estate sales associate affiliated with Compass Florida, LLC d/b/a Compass, a licensed real estate broker, and a member of Riley Smith Group at Compass. All material is intended for informational real estate marketing purposes only. Nothing herein shall be construed as legal, tax, accounting, or other professional advice outside the scope of real estate brokerage services.
+    </p>
+    <p class="footer-copy">© <span id="year">2026</span> Tayreen Nelson · Riley Smith Group at Compass · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('mobileNav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        var open = !nav.hasAttribute('hidden');
+        if(open){ nav.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); btn.classList.remove('is-open'); }
+        else { nav.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); btn.classList.add('is-open'); }
+      });
+    })();
+  </script>
+</body>
+</html>
