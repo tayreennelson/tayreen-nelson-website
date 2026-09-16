@@ -1251,9 +1251,20 @@ section { padding-left: clamp(20px, 4vw, 56px); padding-right: clamp(20px, 4vw, 
   .hero-foot-divider { display: none; }
 }
 
-/* Billskoog & Nelson partnership header — keep the wordmark on one line on mobile */
-@media (max-width: 900px) {
+/* Billskoog & Nelson partnership header — the wordmark stays on one line, and the
+   "Riley Smith Group at Compass" tag drops away before the nav can wrap. */
+.bn-header { gap: clamp(20px, 3vw, 48px); }
+.bn-header .brand-name,
+.bn-header .brand-sub,
+.bn-header .primary-nav a { white-space: nowrap; }
+/* Below 1100px there is not room for the wordmark, the tag and six nav items. */
+@media (max-width: 1100px) {
   .bn-header .brand-divider,
   .bn-header .brand-sub { display: none; }
-  .bn-header .brand-name { white-space: nowrap; }
+}
+@media (min-width: 901px) and (max-width: 1240px) {
+  .bn-header .primary-nav { gap: 18px; }
+}
+@media (min-width: 901px) and (max-width: 960px) {
+  .bn-header .primary-nav { gap: 13px; }
 }

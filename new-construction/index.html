@@ -22,8 +22,8 @@
   <meta name="twitter:description" content="Coconut Grove new construction — buyers, investors, land, and finished homes coming to market." />
   <meta name="twitter:image" content="https://tayreennelson.com/images/wave-house-rendering.jpg" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-bn.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-bn.png" />
   <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
   <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
   <link rel="stylesheet" href="/styles.css" />
@@ -49,6 +49,27 @@
     .nc-lede { color: var(--muted); max-width: 640px; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.75; font-weight: 300; }
 
     .nc-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+    .nc-hero-figure { margin: 44px 0 0; }
+    .nc-hero-figure img {
+      display: block; width: 100%; height: auto;
+      aspect-ratio: 4 / 3; object-fit: cover;
+    }
+    .nc-hero-figure figcaption {
+      margin-top: 12px;
+      font-size: 11px; letter-spacing: var(--eyebrow-tracked);
+      text-transform: uppercase; color: var(--muted);
+    }
+    @media (min-width: 1024px) {
+      .nc-hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(40px, 5vw, 76px);
+        align-items: center;
+      }
+      .nc-hero h1 { font-size: clamp(40px, 3.8vw, 58px); max-width: none; }
+      .nc-hero-figure { margin: 0; }
+    }
     .nc-btn {
       display: inline-block; padding: 16px 34px; font-size: 12px; font-weight: 500;
       text-transform: uppercase; letter-spacing: var(--button-tracked);
@@ -274,7 +295,7 @@
     <a class="brand" href="/new-construction/" aria-label="Billskoog &amp; Nelson — Riley Smith Group at Compass — return to home">
       <span class="brand-name">Billskoog &amp; Nelson</span>
       <span class="brand-divider" aria-hidden="true">·</span>
-      <span class="brand-sub">Riley Smith Group at Compass</span>
+      <span class="brand-sub">RSG at Compass</span>
     </a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="/new-construction/#partnership" aria-current="page">About Us</a>
@@ -301,6 +322,7 @@
 
     <section class="nc-hero">
       <div class="nc-hero-inner">
+        <div class="nc-hero-copy">
         <p class="nc-breadcrumb"><a href="/">Home</a> <span aria-hidden="true">·</span> New Construction</p>
         <p class="nc-eyebrow">Luxury New Construction · Coconut Grove, Miami</p>
         <h1>In new construction, the value is <em>behind the walls.</em></h1>
@@ -314,6 +336,14 @@
           <a href="#inquire" class="nc-btn">Start a Conversation</a>
           <a href="/wave-house/" class="nc-btn nc-btn-ghost">See What's Coming</a>
         </div>
+        </div>
+
+        <figure class="nc-hero-figure">
+          <img src="/images/micanopy-1701-terrace.jpg"
+               alt="1701 Micanopy Avenue, Coconut Grove — completed new-construction residence at dusk, pool and covered terrace"
+               width="1245" height="934" loading="eager" />
+          <figcaption>1701 Micanopy Avenue · Coconut Grove</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -418,7 +448,7 @@
             emphasis on preparation over enthusiasm.
           </p>
           <ul>
-            <li>Former practicing attorney — probate, title, transactional</li>
+            <li>Former practicing attorney — probate &amp; real estate law</li>
             <li>Florida State University · St. Thomas University School of Law, J.D.</li>
             <li>Founding member, Law Grads of Compass</li>
             <li>Bilingual — English &amp; Spanish</li>
