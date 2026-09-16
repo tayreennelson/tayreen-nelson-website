@@ -64,6 +64,10 @@
       color: #fff; font-size: clamp(44px, 6.4vw, 92px); line-height: 1.0;
       letter-spacing: var(--serif-tracked); margin: 0 0 18px; font-weight: 300;
     }
+    .wh-hero h1.wh-logo { margin: 0 0 24px; line-height: 0; }
+    .wh-hero h1.wh-logo img {
+      display: block; width: min(600px, 84vw); height: auto;
+    }
     .wh-address {
       color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.3vw, 17px);
       letter-spacing: 0.22em; text-transform: uppercase; font-weight: 300; margin: 0 0 28px;
@@ -157,6 +161,12 @@
     .wh-team { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 30px; margin-top: 40px; }
     .wh-team .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked); color: var(--ocean); margin-bottom: 9px; }
     .wh-team .v { font-size: 16px; color: var(--ink); font-weight: 300; }
+    .wh-team .v a {
+      color: var(--ocean);
+      border-bottom: 1px solid rgba(3, 74, 125, 0.32);
+      transition: border-color .2s var(--easing);
+    }
+    .wh-team .v a:hover { border-bottom-color: var(--ocean); }
 
     .wh-team-note {
       margin-top: 40px !important; padding: 26px 30px;
@@ -226,7 +236,7 @@
     <section class="wh-hero">
       <div class="wh-hero-inner">
         <p class="wh-eyebrow">Coming Soon · Coconut Grove</p>
-        <h1>Wave House</h1>
+        <h1 class="wh-logo"><img src="/images/wave-house-logo.png" alt="Wave House" width="1208" height="272" /></h1>
         <p class="wh-address">66 Samana Drive · Coconut Grove</p>
         <p class="wh-hero-lede">
           A new-construction residence entering its final stages — and a private First Look
@@ -291,10 +301,10 @@
     <section class="wh-section" style="padding-top:0;">
       <span class="wh-rule">Project Team</span>
       <div class="wh-team">
-        <div><p class="k">Architect</p><p class="v">Ginard Studio</p></div>
-        <div><p class="k">Contractor</p><p class="v">Billskog Construction</p></div>
-        <div><p class="k">Developer</p><p class="v">Urbane Capital LLC</p></div>
-        <div><p class="k">Representation</p><p class="v">Billskoog &amp; Nelson<br />Riley Smith Group at Compass</p></div>
+        <div><p class="k">Architect</p><p class="v"><a href="https://www.ginardstudio.com" target="_blank" rel="noopener noreferrer">Ginard Studio</a></p></div>
+        <div><p class="k">Contractor</p><p class="v"><a href="https://billskogconstruction.com" target="_blank" rel="noopener noreferrer">Billskog Construction</a></p></div>
+        <div><p class="k">Developer</p><p class="v"><a href="https://urbanecapitalllc.com" target="_blank" rel="noopener noreferrer">Urbane Capital LLC</a></p></div>
+        <div><p class="k">Representation</p><p class="v"><a href="/new-construction/">Billskoog &amp; Nelson</a><br /><a href="https://rileysmithgroup.com" target="_blank" rel="noopener noreferrer">Riley Smith Group at Compass</a></p></div>
       </div>
 
       <p class="wh-team-note">
