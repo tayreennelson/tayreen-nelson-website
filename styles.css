@@ -1250,3 +1250,10 @@ section { padding-left: clamp(20px, 4vw, 56px); padding-right: clamp(20px, 4vw, 
   .hero-foot { flex-direction: column; gap: 6px; padding: 12px 18px; text-align: center; }
   .hero-foot-divider { display: none; }
 }
+
+/* Billskoog & Nelson partnership header — keep the wordmark on one line on mobile */
+@media (max-width: 900px) {
+  .bn-header .brand-divider,
+  .bn-header .brand-sub { display: none; }
+  .bn-header .brand-name { white-space: nowrap; }
+}
