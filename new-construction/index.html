@@ -166,6 +166,18 @@
       border-bottom: 1px solid var(--ocean); padding-bottom: 4px;
     }
 
+    /* whole-card click target: the arrow link stretches over the card */
+    .nc-project { position: relative; overflow: hidden; transition: border-color .25s var(--easing), box-shadow .25s var(--easing); }
+    .nc-project img { transition: transform .5s var(--easing); }
+    .nc-project a.nc-link.nc-stretch::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+    .nc-project:has(a.nc-stretch):hover { border-color: var(--line); box-shadow: 0 14px 34px rgba(11,15,18,0.10); }
+    .nc-project:has(a.nc-stretch):hover img { transform: scale(1.03); }
+    .nc-project a.nc-stretch:focus-visible::after { outline: 2px solid var(--ocean); outline-offset: -3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .nc-project, .nc-project img { transition: none; }
+      .nc-project:has(a.nc-stretch):hover img { transform: none; }
+    }
+
     /* coverage matrix */
     .nc-matrix { margin-top: 48px; border-top: 2px solid var(--ocean); }
     .nc-matrix-head, .nc-matrix-row {
@@ -299,9 +311,9 @@
     </a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="/new-construction/#partnership" aria-current="page">About Us</a>
-      <a href="/new-construction/#projects">Projects</a>
-      <a href="/new-construction/#record">Past Sales</a>
+      <a href="/new-construction/#projects">New Projects</a>
       <a href="/wave-house/">Wave House</a>
+      <a href="/oak-house/">Oak House</a>
       <a href="/developers/">For Developers</a>
       <a href="/new-construction/#inquire" class="nav-cta">Contact</a>
     </nav>
@@ -311,9 +323,9 @@
   </header>
   <div class="mobile-nav" id="mobileNav" hidden>
     <a href="/new-construction/#partnership" aria-current="page">About Us</a>
-    <a href="/new-construction/#projects">Projects</a>
-    <a href="/new-construction/#record">Past Sales</a>
+    <a href="/new-construction/#projects">New Projects</a>
     <a href="/wave-house/">Wave House</a>
+    <a href="/oak-house/">Oak House</a>
     <a href="/developers/">For Developers</a>
     <a href="/new-construction/#inquire">Contact</a>
   </div>
@@ -359,15 +371,18 @@
         actually be built the way it was drawn.
       </p>
       <p>
-        <strong>Tayreen Nelson</strong> spent more than two decades in law before real estate — probate,
-        title, and transactional work — and is a founding member of Law Grads of Compass. She handles
-        the part of new construction that goes wrong quietly: the contract, the deposit structure,
-        the completion and punch-list language, the survey and title issues that surface late.
+        <strong>Tayreen Nelson</strong> came to real estate after more than two decades in law —
+        probate and real estate — and is a founding member of Law Grads of Compass. She represents
+        you as your agent, and that training changes what she notices in a build contract: the
+        deposit structure, the completion and punch-list language, the survey and title issues that
+        tend to surface late. She raises them early, while there is still room to negotiate.
       </p>
       <p>
-        Together, inside the Riley Smith Group at Compass, that means a buyer gets someone who can
-        walk a job site and someone who can read the builder's contract — and a developer gets a team
-        that can position a project without waiting to be told what it is.
+        Together, inside the Riley Smith Group at Compass, that is an unusual pairing to find on one
+        deal: one of us has built the thing, the other has spent two decades in the documents behind
+        it. A buyer gets someone who can walk a job site and someone who reads the contract with a
+        trained eye. A developer gets a team that can position a project without waiting to be told
+        what it is.
       </p>
 
       <div class="nc-people">
@@ -429,19 +444,10 @@
             residential transactions across Coconut Grove, Coral Gables, Pinecrest, and South Miami.
           </p>
           <p>
-            A graduate of Florida State University and St. Thomas University School of Law, her
-            background in probate, title insurance, and real estate transactional law shapes how she
-            reads a builder's contract — anticipating issues early, protecting client leverage, and
+            A graduate of Florida State University and St. Thomas University School of Law, her background in probate and real estate law shapes how she reads a builder's contract — anticipating issues early, protecting client leverage, and
             coordinating with lenders, title professionals, inspectors, and legal counsel when a deal
             requires it. She is bilingual in English and Spanish and a founding member of Law Grads
             of Compass.
-          </p>
-          <p>
-            She is also a former professional athlete. As a defensive back for the Florida Stingrays,
-            she played in the 2003 Women's Professional Football League national championship —
-            second in the nation — and before that played on Florida State University's nationally
-            ranked Women's Rugby Team from 1995 to 2000. Reading a play before it develops is a
-            useful habit to carry into a contract.
           </p>
           <p>
             A Miami native, she represents buyers and sellers across the Grove and the Gables with an
@@ -562,16 +568,16 @@
               carrying through to the pool deck. A private First Look is being scheduled ahead of the
               open market.
             </p>
-            <a class="nc-link" href="/wave-house/">View the project &amp; RSVP →</a>
+            <a class="nc-link nc-stretch" href="/wave-house/">View the project &amp; RSVP →</a>
           </div>
         </div>
 
         <div class="nc-project">
-          <img src="/images/micanopy-1701-terrace.jpg" alt="1701 Micanopy Avenue — pool and covered terrace at dusk" loading="lazy" />
+          <img src="/images/oak-house-pool.jpg" alt="Oak House, 1701 Micanopy Avenue — pool beneath the canopy live oak" loading="lazy" />
           <div class="nc-project-body">
             <span class="nc-tag nc-tag-live">Currently Listed</span>
-            <h3>1701 Micanopy Avenue</h3>
-            <p class="nc-loc">Coconut Grove</p>
+            <h3>Oak House</h3>
+            <p class="nc-loc">1701 Micanopy Avenue · Coconut Grove</p>
             <p class="nc-specs">6 BD · 7 BA · 0.29 Acres · $8,900,000</p>
             <p>
               Completed new construction on a lot we represented at acquisition — the full arc of a
@@ -579,6 +585,7 @@
               2026 by the same team behind Wave House: Urbane Capital with Billskog Construction.
               Italian Pedini millwork, Sub-Zero appliances, heated saline pool and summer kitchen.
             </p>
+            <a class="nc-link nc-stretch" href="/oak-house/">View the residence &amp; finishes →</a>
           </div>
         </div>
 
@@ -595,7 +602,7 @@
               More new-construction residences are under way in the Grove and coming through winter
               2026. Addresses and details are released as each project nears completion.
             </p>
-            <a class="nc-link" href="#inquire">Contact us for details →</a>
+            <a class="nc-link nc-stretch" href="#inquire">Contact us for details →</a>
           </div>
         </div>
 
@@ -648,7 +655,7 @@
           <p class="k">Building, not buying?</p>
           <h2>For developers &amp; builders</h2>
           <p class="d">
-            Site sourcing, underwriting what a lot will carry, and taking a finished project to
+            Site sourcing, reading what a lot will carry, and taking a finished project to
             market — including two Coconut Grove projects carried from raw land to the closing table.
           </p>
         </div>
@@ -768,9 +775,10 @@
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="/new-construction/#partnership">About Us</a>
-        <a href="/new-construction/#projects">Projects</a>
+        <a href="/new-construction/#projects">New Projects</a>
         <a href="/new-construction/#record">Past Sales</a>
         <a href="/wave-house/">Wave House</a>
+        <a href="/oak-house/">Oak House</a>
         <a href="/developers/">For Developers</a>
         <a href="https://tayreennelson.com/">Tayreen Nelson</a>
       </nav>

@@ -1265,6 +1265,8 @@ section { padding-left: clamp(20px, 4vw, 56px); padding-right: clamp(20px, 4vw, 
 @media (min-width: 901px) and (max-width: 1240px) {
   .bn-header .primary-nav { gap: 18px; }
 }
-@media (min-width: 901px) and (max-width: 960px) {
-  .bn-header .primary-nav { gap: 13px; }
+@media (min-width: 901px) and (max-width: 1000px) {
+  /* six nav items need the side gutter back at the narrowest desktop widths */
+  .bn-header.site-header { padding-left: 20px; padding-right: 20px; gap: 16px; }
+  .bn-header .primary-nav { gap: 11px; }
 }

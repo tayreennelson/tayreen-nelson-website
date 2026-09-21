@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#034A7D" />
+
+  <title>Oak House · 1701 Micanopy Avenue, Coconut Grove | Billskoog &amp; Nelson</title>
+  <meta name="description" content="Oak House — a completed new-construction residence at 1701 Micanopy Avenue in Coconut Grove, built beneath a canopy live oak by Urbane Capital with Billskog Construction. Currently offered at $8,900,000." />
+  <meta name="keywords" content="Oak House Coconut Grove, 1701 Micanopy Avenue, new construction Coconut Grove, Coconut Grove luxury home for sale, Miami new construction, Pedini kitchen Miami, Billskoog Nelson" />
+  <link rel="canonical" href="https://tayreennelson.com/oak-house/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Billskoog &amp; Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="Oak House · 1701 Micanopy Avenue · Coconut Grove" />
+  <meta property="og:description" content="Completed new construction beneath a canopy live oak. Offered at $8,900,000." />
+  <meta property="og:url" content="https://tayreennelson.com/oak-house/" />
+  <meta property="og:image" content="https://tayreennelson.com/images/oak-house-hero.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oak House · 1701 Micanopy Avenue · Coconut Grove" />
+  <meta name="twitter:description" content="Completed new construction in Coconut Grove, under a canopy live oak. Offered at $8,900,000." />
+  <meta name="twitter:image" content="https://tayreennelson.com/images/oak-house-hero.jpg" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-bn.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-bn.png" />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Light.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/CompassSans-Regular.ttf" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* ── Oak House page ── */
+    .oh-hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: flex-end;
+      padding: clamp(100px, 14vh, 160px) clamp(20px, 4vw, 56px) clamp(56px, 8vh, 90px);
+      background: var(--ocean-ink);
+      overflow: hidden;
+    }
+    .oh-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: url('/images/oak-house-hero.jpg');
+      background-size: cover;
+      background-position: center 32%;
+      opacity: 0.92;
+    }
+    .oh-hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(2,31,56,0.74) 0%, rgba(2,31,56,0.34) 42%, rgba(2,31,56,0.04) 72%),
+        linear-gradient(to bottom, rgba(2,31,56,0.46) 0%, rgba(2,31,56,0.20) 34%, rgba(2,31,56,0.90) 100%);
+    }
+    .oh-hero-inner { position: relative; z-index: 2; max-width: var(--content-max); margin: 0 auto; width: 100%; }
+    .oh-eyebrow {
+      font-size: 11px; font-weight: 500; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: rgba(255,255,255,0.82);
+      margin-bottom: 20px;
+    }
+    .oh-hero h1 {
+      color: #fff; font-size: clamp(44px, 6.4vw, 92px); line-height: 1.0;
+      letter-spacing: var(--serif-tracked); margin: 0 0 18px; font-weight: 300;
+    }
+    .oh-hero h1.oh-logo { margin: 0 0 24px; line-height: 0; }
+    .oh-hero h1.oh-logo img {
+      display: block; width: min(330px, 62vw); height: auto;
+    }
+    .oh-address {
+      color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.3vw, 17px);
+      letter-spacing: 0.22em; text-transform: uppercase; font-weight: 300; margin: 0 0 28px;
+    }
+    .oh-hero-lede {
+      color: rgba(255,255,255,0.92); font-size: clamp(16px, 1.3vw, 19px);
+      line-height: 1.7; font-weight: 300; max-width: 560px; margin: 0 0 34px;
+    }
+    .oh-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+    .oh-btn {
+      display: inline-block; padding: 16px 34px; font-size: 12px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: var(--button-tracked);
+      background: #fff; color: var(--ocean-ink); border: 1px solid #fff;
+      transition: background .25s var(--easing), color .25s var(--easing);
+    }
+    .oh-btn:hover { background: transparent; color: #fff; }
+    .oh-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.55); }
+    .oh-btn-ghost:hover { background: #fff; color: var(--ocean-ink); }
+
+    /* status strip */
+    .oh-status {
+      background: var(--ivory);
+      border-bottom: 1px solid var(--line-soft);
+      padding: clamp(28px, 4vh, 40px) clamp(20px, 4vw, 56px);
+    }
+    .oh-status-inner {
+      max-width: var(--content-max); margin: 0 auto;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 28px;
+    }
+    .oh-stat .k {
+      font-size: 10.5px; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked);
+      color: var(--ocean); margin-bottom: 9px;
+    }
+    .oh-stat .v { font-size: clamp(16px, 1.5vw, 19px); color: var(--ink); font-weight: 300; line-height: 1.45; }
+
+    /* body */
+    .oh-section { max-width: var(--content-narrow); margin: 0 auto; padding: clamp(66px, 9vh, 104px) clamp(20px, 4vw, 56px); }
+    .oh-rule {
+      font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked);
+      color: var(--ocean); margin-bottom: 30px; padding-bottom: 14px; border-bottom: 1px solid var(--line); display: block;
+    }
+    .oh-section h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.12; color: var(--ink); font-weight: 300; margin: 0 0 24px; }
+    .oh-section p { font-size: 16.5px; line-height: 1.78; color: var(--muted); font-weight: 300; margin: 0 0 20px; max-width: 700px; }
+    .oh-section p strong { color: var(--ink); font-weight: 500; }
+
+    /* gallery */
+    .oh-gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px; margin: 44px 0 8px;
+    }
+    .oh-gallery figure { margin: 0; overflow: hidden; background: var(--ivory); }
+    .oh-gallery img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4; display: block; transition: transform .6s var(--easing); }
+    .oh-gallery figure:hover img { transform: scale(1.04); }
+    .oh-caption { font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-top: 26px; }
+
+    /* RSVP */
+    .oh-rsvp { background: var(--ocean-ink); color: #fff; padding: clamp(66px, 9vh, 110px) clamp(20px, 4vw, 56px); }
+    .oh-rsvp-inner { max-width: 780px; margin: 0 auto; }
+    .oh-rsvp .oh-rule { color: rgba(255,255,255,0.72); border-bottom-color: rgba(255,255,255,0.18); }
+    .oh-rsvp h2 { color: #fff; font-size: clamp(30px, 3.6vw, 50px); font-weight: 300; line-height: 1.1; margin: 0 0 22px; }
+    .oh-rsvp p { color: rgba(255,255,255,0.8); font-size: 16.5px; line-height: 1.78; font-weight: 300; max-width: 640px; }
+    .oh-form { margin-top: 44px; }
+    .oh-form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+    .oh-field-full { grid-column: 1 / -1; }
+    .oh-form label {
+      display: block; font-size: 10.5px; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: rgba(255,255,255,0.68); margin-bottom: 10px;
+    }
+    .oh-form input, .oh-form select, .oh-form textarea {
+      width: 100%; background: transparent; border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.28);
+      color: #fff; font-family: inherit; font-size: 16px; font-weight: 300;
+      padding: 10px 0; border-radius: 0; transition: border-color .25s var(--easing);
+    }
+    .oh-form input:focus, .oh-form select:focus, .oh-form textarea:focus {
+      outline: none; border-bottom-color: #fff;
+    }
+    .oh-form select option { background: var(--ocean-ink); color: #fff; }
+    .oh-form textarea { resize: vertical; }
+    .oh-submit {
+      margin-top: 40px; width: 100%; padding: 18px 34px; cursor: pointer;
+      background: #fff; color: var(--ocean-ink); border: 1px solid #fff;
+      font-family: inherit; font-size: 12px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: var(--button-tracked);
+      transition: background .25s var(--easing), color .25s var(--easing);
+    }
+    .oh-submit:hover { background: transparent; color: #fff; }
+    .oh-form-note { font-size: 12.5px; color: rgba(255,255,255,0.55); margin-top: 20px; line-height: 1.6; }
+
+    /* finishes */
+    .oh-spec {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 40px 44px; margin: 44px 0 8px;
+    }
+    .oh-spec-group h3 {
+      font-size: 11px; font-weight: 500; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: var(--ocean);
+      margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+    }
+    .oh-spec-group ul { list-style: none; margin: 0; padding: 0; }
+    .oh-spec-group li {
+      font-size: 15px; line-height: 1.6; color: var(--muted); font-weight: 300;
+      padding: 10px 0; border-bottom: 1px solid var(--line-soft);
+    }
+    .oh-spec-group li:last-child { border-bottom: none; }
+
+    /* team credits */
+    .oh-team { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 30px; margin-top: 40px; }
+    .oh-team .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: var(--eyebrow-tracked); color: var(--ocean); margin-bottom: 9px; }
+    .oh-team .v { font-size: 16px; color: var(--ink); font-weight: 300; }
+    .oh-team .v a {
+      color: var(--ocean);
+      border-bottom: 1px solid rgba(3, 74, 125, 0.32);
+      transition: border-color .2s var(--easing);
+    }
+    .oh-team .v a:hover { border-bottom-color: var(--ocean); }
+
+    .oh-team-note {
+      margin-top: 40px !important; padding: 26px 30px;
+      background: var(--ivory); border-left: 2px solid var(--ocean);
+      font-size: 15px !important; line-height: 1.75 !important; max-width: none !important;
+    }
+    .oh-team-note strong { color: var(--ink); font-weight: 500; }
+    .oh-team-note a { color: var(--ocean); border-bottom: 1px solid var(--ocean); }
+
+    .oh-follow {
+      margin-top: 26px !important; font-size: 14px !important; color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    .oh-follow a { color: var(--ocean); border-bottom: 1px solid var(--ocean); }
+
+    .oh-legal {
+      background: var(--paper); border-top: 1px solid var(--line-soft);
+      padding: 34px clamp(20px, 4vw, 56px);
+    }
+    .oh-legal p {
+      max-width: var(--content-max); margin: 0 auto; font-size: 11.5px;
+      line-height: 1.7; color: var(--muted); letter-spacing: 0.02em;
+    }
+    @media (max-width: 640px) {
+      .oh-hero { min-height: 78vh; }
+      .oh-hero-cta .oh-btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled bn-header" id="siteHeader">
+    <a class="brand" href="/new-construction/" aria-label="Billskoog &amp; Nelson — Riley Smith Group at Compass — return to home">
+      <span class="brand-name">Billskoog &amp; Nelson</span>
+      <span class="brand-divider" aria-hidden="true">·</span>
+      <span class="brand-sub">RSG at Compass</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/new-construction/#partnership">About Us</a>
+      <a href="/new-construction/#projects">New Projects</a>
+      <a href="/wave-house/">Wave House</a>
+      <a href="/oak-house/" aria-current="page">Oak House</a>
+      <a href="/developers/">For Developers</a>
+      <a href="#showing" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="/new-construction/#partnership">About Us</a>
+    <a href="/new-construction/#projects">New Projects</a>
+    <a href="/wave-house/">Wave House</a>
+    <a href="/oak-house/" aria-current="page">Oak House</a>
+    <a href="/developers/">For Developers</a>
+    <a href="#showing">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <section class="oh-hero">
+      <div class="oh-hero-inner">
+        <p class="oh-eyebrow">Currently Listed · Coconut Grove</p>
+        <h1 class="oh-logo"><img src="/images/oak-house-logo.png" alt="Oak House" width="1045" height="661" /></h1>
+        <p class="oh-address">1701 Micanopy Avenue · Coconut Grove</p>
+        <p class="oh-hero-lede">
+          A completed new-construction residence built around a canopy live oak — finished in 2026
+          by the same team now building Wave House, and available to see now.
+        </p>
+        <div class="oh-hero-cta">
+          <a href="#showing" class="oh-btn">Request a Private Showing</a>
+          <a href="#finishes" class="oh-btn oh-btn-ghost">See the Finishes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="oh-status">
+      <div class="oh-status-inner">
+        <div class="oh-stat">
+          <p class="k">Residence</p>
+          <p class="v">6 BD · 7 BA</p>
+        </div>
+        <div class="oh-stat">
+          <p class="k">Lot</p>
+          <p class="v">0.29 Acres</p>
+        </div>
+        <div class="oh-stat">
+          <p class="k">Completed</p>
+          <p class="v">2026</p>
+        </div>
+        <div class="oh-stat">
+          <p class="k">Offered At</p>
+          <p class="v">$8,900,000</p>
+        </div>
+        <div class="oh-stat">
+          <p class="k">Status</p>
+          <p class="v">On the market · showings by appointment</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="oh-section">
+      <span class="oh-rule">The Residence</span>
+      <h2>Named for the tree it was built around.</h2>
+      <p>
+        A mature live oak sits at the front of the lot, and the house was planned around it rather
+        than against it. The main volume stays low and single-storey beneath a standing-seam metal
+        roof, so the canopy reads as the tallest thing on the property — which is how the Grove is
+        supposed to look, and increasingly how it does not.
+      </p>
+      <p>
+        Behind it the plan opens: full-height glass across the rear, a covered terrace under a warm
+        wood ceiling, ipe decking running out to a heated saline pool, and a summer kitchen set
+        into the same line. Nearly a third of an acre, walled and planted, with the pool deck
+        sitting in dappled shade for most of the afternoon.
+      </p>
+      <p>
+        It is <strong>ground-up new construction, completed in 2026</strong> — developed by Urbane
+        Capital and built by Billskog Construction, the team now finishing Wave House four streets
+        away. Billskoog &amp; Nelson represented the buyer on the land acquisition here in 2024, and
+        brought the finished residence to market this year.
+      </p>
+
+      <div class="oh-gallery">
+        <figure><img src="/images/oak-house-pool.jpg" alt="Oak House — rear elevation and pool beneath the canopy live oak" loading="lazy" /></figure>
+        <figure><img src="/images/oak-house-terrace.jpg" alt="Covered terrace under a warm wood ceiling, looking out to the pool" loading="lazy" /></figure>
+        <figure><img src="/images/oak-house-lawn.jpg" alt="Lawn and pool deck under the oak canopy" loading="lazy" /></figure>
+        <figure><img src="/images/oak-house-rendering.jpg" alt="Oak House — street elevation with the live oak" loading="lazy" /></figure>
+      </div>
+      <p class="oh-caption">1701 Micanopy Avenue · Coconut Grove · Completed 2026</p>
+    </section>
+
+    <section class="oh-section" id="finishes" style="padding-top:0;">
+      <span class="oh-rule">Finishes</span>
+      <h2>Specified early, not chosen late.</h2>
+      <p>
+        On a spec build, the finish schedule is where the money either shows or disappears. This one
+        was set before construction and held to it. The full package runs to twenty pages — this is
+        what it amounts to.
+      </p>
+
+      <div class="oh-spec">
+        <div class="oh-spec-group">
+          <h3>Kitchen</h3>
+          <ul>
+            <li>Pedini Italian cabinetry — Caracalla Naturale with Beige Ovatta</li>
+            <li>Pompeii Quartz countertops — Santorini, honed</li>
+            <li>Wolf 36&quot; gas range and 36&quot; insert ventilation hood</li>
+            <li>Sub-Zero 30&quot; refrigerator and 30&quot; freezer, panel-ready</li>
+            <li>Sub-Zero 24&quot; undercounter wine storage, glass door</li>
+            <li>Miele 24&quot; panel-ready dishwasher</li>
+            <li>Elkay undermount sink · Blanco faucet · InSinkErator disposal</li>
+          </ul>
+        </div>
+
+        <div class="oh-spec-group">
+          <h3>Primary Suite</h3>
+          <ul>
+            <li>Pedini vanity in Tulle wood veneer</li>
+            <li>Travertine countertops</li>
+            <li>Kohler 60&quot; freestanding tub with floor-mounted filler</li>
+            <li>Signature Hardware thermostatic shower system, matte black</li>
+            <li>Toto water closets</li>
+            <li>Kala Dolcetto prime wood flooring in the closet</li>
+          </ul>
+        </div>
+
+        <div class="oh-spec-group">
+          <h3>Terrace &amp; Summer Kitchen</h3>
+          <ul>
+            <li>Premium ipe hardwood decking — Lumber Plus, Maximo</li>
+            <li>Pedini cabinetry — Tarpaulin Grey, matte</li>
+            <li>Pompeii Quartz — Concreto, honed</li>
+            <li>Wolf 36&quot; outdoor gas grill</li>
+            <li>Sub-Zero 24&quot; outdoor refrigerator</li>
+            <li>Scotsman 15&quot; outdoor ice maker</li>
+            <li>Heated saline pool</li>
+          </ul>
+        </div>
+
+        <div class="oh-spec-group">
+          <h3>Throughout</h3>
+          <ul>
+            <li>Mirage Glocal G014 porcelain flooring</li>
+            <li>Pedini cabinetry in the pantry, laundry and secondary baths</li>
+            <li>Pompeii Quartz — Pure White, brushed</li>
+            <li>Hardware and interior finishes in black and dark grey</li>
+            <li>LG front-load washer and dryer</li>
+            <li>Standing-seam metal roof</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="oh-caption">Finishes package dated December 2025 · full document available on request</p>
+    </section>
+
+    <section class="oh-section" style="padding-top:0;">
+      <span class="oh-rule">Project Team</span>
+      <div class="oh-team">
+        <div><p class="k">Contractor</p><p class="v"><a href="https://billskogconstruction.com" target="_blank" rel="noopener noreferrer">Billskog Construction</a></p></div>
+        <div><p class="k">Developer</p><p class="v"><a href="https://urbanecapitalllc.com" target="_blank" rel="noopener noreferrer">Urbane Capital LLC</a></p></div>
+        <div><p class="k">Representation</p><p class="v"><a href="/new-construction/">Billskoog &amp; Nelson</a><br /><a href="https://rileysmithgroup.com" target="_blank" rel="noopener noreferrer">Riley Smith Group at Compass</a></p></div>
+        <div><p class="k">Completed</p><p class="v">2026</p></div>
+      </div>
+
+      <p class="oh-team-note">
+        <strong>The same team is finishing another one.</strong> Urbane Capital with Billskog
+        Construction is completing <a href="/wave-house/">Wave House</a> at 66 Samana Drive this
+        October. If Oak House is close but not quite it, that one is still early enough to see
+        before it is publicly marketed.
+      </p>
+
+      <p class="oh-follow">
+        Project updates are posted as each residence moves toward completion —
+        <a href="https://www.instagram.com/vcbillskoog/" target="_blank" rel="noopener noreferrer">@vcbillskoog</a>.
+      </p>
+    </section>
+
+    <section class="oh-rsvp" id="showing">
+      <div class="oh-rsvp-inner">
+        <span class="oh-rule">Private Showing</span>
+        <h2>See it in person.</h2>
+        <p>
+          Oak House shows best in the afternoon, when the oak throws shade across the pool deck and
+          the rear glass is open. Tell us when suits and we will arrange it — with whoever you want
+          in the room, including your own inspector or architect.
+        </p>
+        <p>
+          We can also send the full finishes package, the survey, and what the lot next door did,
+          before you spend a Saturday on it.
+        </p>
+
+        <form class="oh-form"
+              action="https://formspree.io/f/xwvyjjek"
+              method="POST"
+              aria-label="Request a private showing of Oak House">
+          <input type="hidden" name="_subject" value="Oak House — private showing request" />
+          <input type="hidden" name="source" value="tayreennelson.com/oak-house" />
+
+          <div class="oh-form-grid">
+            <div>
+              <label for="oh-name">Name</label>
+              <input id="oh-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="oh-email">Email</label>
+              <input id="oh-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label for="oh-phone">Phone</label>
+              <input id="oh-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div>
+              <label for="oh-role">I am</label>
+              <select id="oh-role" name="role">
+                <option>A prospective buyer</option>
+                <option>An investor</option>
+                <option>An agent representing a buyer</option>
+                <option>An advisor (attorney, family office, wealth manager)</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="oh-when">Preferred timing</label>
+              <select id="oh-when" name="timing">
+                <option>This week</option>
+                <option>Next week</option>
+                <option>Within the month</option>
+                <option>Send me the package first</option>
+              </select>
+            </div>
+            <div>
+              <label for="oh-from">Relocating from (optional)</label>
+              <input id="oh-from" name="relocating_from" type="text" placeholder="City or state" />
+            </div>
+            <div class="oh-field-full">
+              <label for="oh-message">Anything we should know (optional)</label>
+              <textarea id="oh-message" name="message" rows="4" placeholder="What you're looking for, or who you represent."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="oh-submit">Request a Showing</button>
+          <p class="oh-form-note">
+            Requests are reviewed individually. Your information is kept private, is never sold or
+            shared, and is used only to reach you about this residence.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <div class="oh-legal">
+      <p>
+        Oak House is a completed residence at 1701 Micanopy Avenue, Coconut Grove, currently offered
+        for sale. Photographs depict the residence as built; the street-elevation image is an
+        artist's rendering prepared during design and is intended to convey design intent only.
+        Finishes and appliance specifications are drawn from the project finishes package dated
+        December 2025 and are subject to change and substitution; buyers should verify all
+        specifications, dimensions, and lot information independently. Pricing and availability are
+        subject to change without notice. This is not an offer to sell or a solicitation to buy
+        where prohibited by law.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">Billskoog &amp; Nelson</p>
+        <p class="footer-team">Riley Smith Group at Compass</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/new-construction/#partnership">About Us</a>
+        <a href="/new-construction/#projects">New Projects</a>
+        <a href="/new-construction/#record">Past Sales</a>
+        <a href="/wave-house/">Wave House</a>
+        <a href="/oak-house/">Oak House</a>
+        <a href="/developers/">For Developers</a>
+        <a href="https://tayreennelson.com/">Tayreen Nelson</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="tel:+13054908244">Victor · (305) 490-8244</a>
+        <a href="mailto:Victor@RileySmithGroup.com">Victor@RileySmithGroup.com</a>
+        <a href="tel:+19542438117">Tayreen · (954) 243-8117</a>
+        <a href="mailto:Tayreen@RileySmithGroup.com">Tayreen@RileySmithGroup.com</a>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="/images/rsg-compass-white.png" alt="Riley Smith Group at Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <img src="/images/law-grads-white.svg" alt="Law Grads of Compass" />
+      <span class="footer-logo-divider" aria-hidden="true"></span>
+      <div class="eho-badge" aria-label="Equal Housing Opportunity">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true" role="img" focusable="false">
+          <rect x="2" y="2" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M32 12 L52 28 L48 28 L48 50 L36 50 L36 36 L28 36 L28 50 L16 50 L16 28 L12 28 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <text x="32" y="58" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">EQUAL HOUSING</text>
+          <text x="32" y="63" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="middle" fill="currentColor" letter-spacing="0.5">OPPORTUNITY</text>
+        </svg>
+        <span class="eho-label">Equal Housing<br/>Opportunity</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Tayreen Nelson and Victor Billskoog are real estate sales associates affiliated with Compass Florida, LLC d/b/a Compass, a licensed real estate broker, and members of Riley Smith Group at Compass. All material is intended for informational real estate marketing purposes only. Nothing herein shall be construed as legal, tax, accounting, or other professional advice outside the scope of real estate brokerage services.
+    </p>
+    <p class="footer-copy">© <span id="year">2026</span> Billskoog &amp; Nelson · Riley Smith Group at Compass · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('mobileNav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        var open = !nav.hasAttribute('hidden');
+        if(open){ nav.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); btn.classList.remove('is-open'); }
+        else { nav.removeAttribute('hidden'); btn.setAttribute('aria-expanded','true'); btn.classList.add('is-open'); }
+      });
+    })();
+  </script>
+</body>
+</html>
