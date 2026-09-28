@@ -1270,3 +1270,33 @@ section { padding-left: clamp(20px, 4vw, 56px); padding-right: clamp(20px, 4vw, 
   .bn-header.site-header { padding-left: 20px; padding-right: 20px; gap: 16px; }
   .bn-header .primary-nav { gap: 11px; }
 }
+
+/* ==========================================================================
+   Billskoog & Nelson — partnership brand palette
+   Scoped to the B&N pages via <body class="bn-brand">; the personal site
+   keeps the cream palette untouched.
+   ========================================================================== */
+.bn-brand {
+  --paper: #FFFFFF;
+  --ivory: #F1F6FA;
+  --muted: #35648C;
+  --line: rgba(3, 74, 125, 0.16);
+  --line-soft: rgba(3, 74, 125, 0.08);
+}
+.bn-brand .site-footer { background: var(--ocean-ink); }
+.bn-brand .site-header { background: rgba(255, 255, 255, 0); }
+.bn-brand .site-header.is-scrolled {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(3, 74, 125, 0.12);
+}
+
+.footer-desc {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  color: rgba(255, 255, 255, 0.58);
+  margin: 0 0 10px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-block;
+}
