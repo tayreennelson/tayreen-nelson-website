@@ -323,6 +323,34 @@
       margin: 0 0 26px; padding-right: 52px; max-width: 760px;
       font-size: 16px; line-height: 1.8; color: var(--muted); font-weight: 300;
     }
+  
+    /* ---- mobile / tablet hero: lead with the architecture ---------------- */
+    @media (max-width: 1023px) {
+      /* the photograph comes first; the words follow it */
+      .nc-hero-inner { display: flex; flex-direction: column-reverse; }
+      .nc-hero { padding-top: clamp(78px, 11vh, 104px); padding-bottom: clamp(40px, 6vh, 64px); }
+      .nc-hero-figure { margin: 0 0 clamp(26px, 4vh, 36px); }
+      /* the breadcrumb is the first thing a phone visitor reads — it is not
+         worth a line there, and BreadcrumbList schema still carries it */
+      .nc-breadcrumb { display: none; }
+    }
+    @media (max-width: 760px) {
+      /* run the photograph edge to edge */
+      .nc-hero-figure {
+        margin-left: calc(-1 * clamp(20px, 4vw, 56px));
+        margin-right: calc(-1 * clamp(20px, 4vw, 56px));
+      }
+      .nc-hero-figure img { aspect-ratio: 4 / 3.3; }
+      .nc-hero-figure figcaption {
+        padding-left: clamp(20px, 4vw, 56px);
+        padding-right: clamp(20px, 4vw, 56px);
+      }
+      /* keep the caption quieter than the blue eyebrow that follows it */
+      .nc-hero-figure figcaption { font-size: 9.5px; letter-spacing: 0.22em; opacity: 0.72; }
+      .nc-hero h1 { font-size: clamp(33px, 8.4vw, 44px); line-height: 1.06; }
+      .nc-hero-cta { gap: 12px; }
+      .nc-hero-cta .nc-btn { flex: 1 1 100%; text-align: center; }
+    }
   </style>
 <!-- structured data: Billskoog & Nelson -->
 <script type="application/ld+json">
