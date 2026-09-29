@@ -41,70 +41,140 @@
   <!-- Structured data: Real Estate Agent + Person -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": ["Person", "RealEstateAgent"],
-    "name": "Tayreen Nelson",
-    "givenName": "Tayreen",
-    "familyName": "Nelson",
-    "jobTitle": "Residential Real Estate Advisor",
-    "description": "Residential real estate advisor with the Riley Smith Group at Compass and former practicing attorney still licensed in Florida (21+ years). Twelve years of Miami brokerage experience. Multi-year top producer specializing in seller representation in Coconut Grove, Coral Gables, Pinecrest, and South Miami. Role is exclusively brokerage representation, not legal counsel.",
-    "url": "https://tayreennelson.com/",
-    "image": "https://tayreennelson.com/images/tayreen-portrait.jpg",
-    "telephone": "+1-954-243-8117",
-    "email": "Tayreen@RileySmithGroup.com",
-    "knowsLanguage": ["English", "Spanish"],
-    "hasCredential": [
-      { "@type": "EducationalOccupationalCredential", "name": "Florida Real Estate Sales Associate" },
-      { "@type": "EducationalOccupationalCredential", "name": "Licensed in Law, State of Florida (21+ years — background, not currently practicing as legal counsel for real estate clients)" }
-    ],
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "Florida State University", "url": "https://www.fsu.edu/" },
-      { "@type": "CollegeOrUniversity", "name": "St. Thomas University School of Law", "url": "https://www.stu.edu/law/" }
-    ],
-    "award": ["Multi-year Top Producer, Riley Smith Group at Compass"],
-    "memberOf": [
-      { "@type": "Organization", "name": "Riley Smith Group at Compass" },
-      { "@type": "Organization", "name": "Law Grads of Compass", "description": "A national Compass network created to connect buyers and sellers with real estate professionals who bring a foundation in law to every transaction. Tayreen Nelson is a founding member." }
-    ],
-    "worksFor": {
-      "@type": "RealEstateOrganization",
-      "name": "Compass Florida, LLC d/b/a Compass",
-      "url": "https://www.compass.com/",
-      "department": { "@type": "Organization", "name": "Riley Smith Group at Compass" }
+  "@context": "https://schema.org",
+  "@type": [
+    "Person",
+    "RealEstateAgent"
+  ],
+  "name": "Tayreen Nelson",
+  "givenName": "Tayreen",
+  "familyName": "Nelson",
+  "jobTitle": "Residential Real Estate Advisor",
+  "description": "Residential real estate advisor with the Riley Smith Group at Compass and former practicing attorney still licensed in Florida (21+ years). Twelve years of Miami brokerage experience. Multi-year top producer specializing in seller representation in Coconut Grove, Coral Gables, Pinecrest, and South Miami. Role is exclusively brokerage representation, not legal counsel.",
+  "url": "https://tayreennelson.com/",
+  "image": "https://tayreennelson.com/images/tayreen-portrait.jpg",
+  "telephone": "+1-954-243-8117",
+  "email": "Tayreen@RileySmithGroup.com",
+  "knowsLanguage": [
+    "English",
+    "Spanish"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Florida Real Estate Sales Associate"
     },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Licensed in Law, State of Florida (21+ years — background, not currently practicing as legal counsel for real estate clients)"
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "St. Thomas University School of Law",
+      "url": "https://www.stu.edu/law/"
+    }
+  ],
+  "award": [
+    "Multi-year Top Producer, Riley Smith Group at Compass"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Riley Smith Group at Compass"
+    },
+    {
+      "@type": "Organization",
+      "name": "Law Grads of Compass",
+      "description": "A national Compass network created to connect buyers and sellers with real estate professionals who bring a foundation in law to every transaction. Tayreen Nelson is a founding member."
+    },
+    {
+      "@type": "Organization",
+      "name": "Billskoog & Nelson",
+      "url": "https://billskoogandnelson.com/",
+      "description": "A new-construction and land-acquisition partnership within the Riley Smith Group at Compass, formed by Victor Billskoog and Tayreen Nelson."
+    }
+  ],
+  "worksFor": {
+    "@type": "RealEstateOrganization",
+    "name": "Compass Florida, LLC d/b/a Compass",
+    "url": "https://www.compass.com/",
+    "department": {
+      "@type": "Organization",
+      "name": "Riley Smith Group at Compass"
+    }
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2550 S Bayshore Dr, STE 106",
+    "addressLocality": "Coconut Grove",
+    "addressRegion": "FL",
+    "postalCode": "33133",
+    "addressCountry": "US"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Coral Gables, FL",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2550 S Bayshore Dr, STE 106",
-      "addressLocality": "Coconut Grove",
+      "addressLocality": "Coral Gables",
       "addressRegion": "FL",
-      "postalCode": "33133",
       "addressCountry": "US"
-    },
-    "homeLocation": {
+    }
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Miami, FL"
+  },
+  "areaServed": [
+    {
       "@type": "Place",
-      "name": "Coral Gables, FL",
-      "address": { "@type": "PostalAddress", "addressLocality": "Coral Gables", "addressRegion": "FL", "addressCountry": "US" }
+      "name": "Coconut Grove, Miami, FL"
     },
-    "birthPlace": { "@type": "Place", "name": "Miami, FL" },
-    "areaServed": [
-      { "@type": "Place", "name": "Coconut Grove, Miami, FL" },
-      { "@type": "Place", "name": "Coral Gables, FL" },
-      { "@type": "Place", "name": "Pinecrest, FL" },
-      { "@type": "Place", "name": "South Miami, FL" },
-      { "@type": "Place", "name": "Brickell, Miami, FL" },
-      { "@type": "Place", "name": "Key Biscayne, FL" },
-      { "@type": "Place", "name": "High Pines, Miami, FL" },
-      { "@type": "Place", "name": "Ponce-Davis, Miami, FL" }
-    ],
-    "sameAs": [
-      "https://www.compass.com/agents/tayreen-nelson/",
-      "https://www.zillow.com/profile/TayreenNelson",
-      "https://www.instagram.com/tayreen.nelson/",
-      "https://www.linkedin.com/in/tayreennelson",
-      "https://www.facebook.com/tayreen.nelson",
-      "https://www.youtube.com/@TayreenNelson"
-    ]
-  }
+    {
+      "@type": "Place",
+      "name": "Coral Gables, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "Pinecrest, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "South Miami, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "Brickell, Miami, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "Key Biscayne, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "High Pines, Miami, FL"
+    },
+    {
+      "@type": "Place",
+      "name": "Ponce-Davis, Miami, FL"
+    }
+  ],
+  "sameAs": [
+    "https://www.compass.com/agents/tayreen-nelson/",
+    "https://www.zillow.com/profile/TayreenNelson",
+    "https://www.instagram.com/tayreen.nelson/",
+    "https://www.linkedin.com/in/tayreennelson",
+    "https://www.facebook.com/tayreen.nelson",
+    "https://www.youtube.com/@TayreenNelson"
+  ]
+}
   </script>
 
   <!-- Aggregate review schema -->
@@ -459,6 +529,25 @@
           <h3>Bilingual, Full-Service Representation</h3>
           <p>Fluent in English and Spanish. Miami native. Buyer outreach, marketing collateral, and negotiations all delivered without translation friction.</p>
         </article>
+      </div>
+    </section>
+
+
+    <!-- ============== PARTNERSHIP ============== -->
+    <section id="new-construction" class="tn-partner" aria-labelledby="tnPartnerTitle">
+      <div class="tn-partner-inner">
+        <p class="eyebrow blue">New Construction &amp; Land</p>
+        <h2 id="tnPartnerTitle">New construction,<br/><em>with a partner.</em></h2>
+        <p>
+          For land, ground-up construction and completed new-construction homes, Tayreen works with
+          Victor Billskoog as <strong>Billskoog &amp; Nelson</strong>, a partnership within the Riley
+          Smith Group at Compass. Victor comes from the construction side of the business; Tayreen
+          comes from the contract. Together they represent buyers, investors and owners across
+          Coconut Grove and greater Miami.
+        </p>
+        <a class="tn-partner-link" href="https://billskoogandnelson.com/new-construction/">
+          Visit Billskoog &amp; Nelson <span aria-hidden="true">&rarr;</span>
+        </a>
       </div>
     </section>
 

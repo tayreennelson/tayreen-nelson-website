@@ -1305,3 +1305,31 @@ section { padding-left: clamp(20px, 4vw, 56px); padding-right: clamp(20px, 4vw, 
   border-top: 1px solid rgba(255, 255, 255, 0.22);
   display: inline-block;
 }
+
+/* ==========================================================================
+   Personal site → Billskoog & Nelson cross-reference band
+   ========================================================================== */
+.tn-partner {
+  background: var(--ivory);
+  padding: clamp(66px, 9vh, 104px) clamp(20px, 4vw, 56px);
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+}
+.tn-partner-inner { max-width: var(--content-narrow); margin: 0 auto; }
+.tn-partner h2 {
+  font-size: clamp(28px, 3.4vw, 46px); line-height: 1.12;
+  color: var(--ink); font-weight: 300; margin: 0 0 24px;
+}
+.tn-partner h2 em { color: var(--ocean); font-style: italic; font-weight: 300; }
+.tn-partner p {
+  font-size: 16.5px; line-height: 1.78; color: var(--muted);
+  font-weight: 300; margin: 0 0 30px; max-width: 700px;
+}
+.tn-partner p strong { color: var(--ink); font-weight: 500; }
+.tn-partner-link {
+  display: inline-block;
+  font-size: 11px; text-transform: uppercase; letter-spacing: var(--button-tracked);
+  color: var(--ocean); border-bottom: 1px solid var(--ocean);
+  padding-bottom: 6px; transition: opacity .2s var(--easing);
+}
+.tn-partner-link:hover { opacity: 0.65; }
