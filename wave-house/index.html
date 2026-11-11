@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#034A7D" />
 
-  <title>Wave House · 66 Samana Drive, Coconut Grove | Private First Look</title>
-  <meta name="description" content="Wave House — a new-construction residence at 66 Samana Drive in Coconut Grove, entering its final stages. Join the private first-look list and see it before it is publicly marketed." />
-  <meta name="keywords" content="Wave House Coconut Grove, 66 Samana Drive, new construction Coconut Grove, Coconut Grove modern home, Miami new construction luxury, Billskoog Nelson" />
-  <link rel="canonical" href="https://tayreennelson.com/wave-house/" />
+  <title>Wave House · 66 Samana Drive, Coconut Grove | Now Listed at $8,699,000</title>
+  <meta name="description" content="Wave House — a new-construction residence at 66 Samana Drive in Coconut Grove. 5 bedrooms, 6.5 baths, 4,770 SF. Listed at $8,699,000. Represented by Billskoog & Nelson · RSG at Compass." />
+  <meta name="keywords" content="Wave House Coconut Grove, 66 Samana Drive, new construction Coconut Grove, Coconut Grove modern home, Miami new construction luxury, Billskoog Nelson, $8699000" />
+  <link rel="canonical" href="https://billskoogandnelson.com/wave-house/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Tayreen Nelson · Riley Smith Group at Compass" />
-  <meta property="og:title" content="Wave House · Coconut Grove · Private First Look" />
-  <meta property="og:description" content="A new-construction residence taking shape at 66 Samana Drive. Join the private first-look list." />
-  <meta property="og:url" content="https://tayreennelson.com/wave-house/" />
-  <meta property="og:image" content="https://tayreennelson.com/images/wave-house-rendering.jpg" />
+  <meta property="og:site_name" content="Billskoog &amp; Nelson · Riley Smith Group at Compass" />
+  <meta property="og:title" content="Wave House · Coconut Grove · Now Listed at $8,699,000" />
+  <meta property="og:description" content="5 BD · 6.5 BA · 4,770 SF · 9,664 SF lot. New construction at 66 Samana Drive, Coconut Grove. Listed on Compass." />
+  <meta property="og:url" content="https://billskoogandnelson.com/wave-house/" />
+  <meta property="og:image" content="https://billskoogandnelson.com/images/wave-house-rendering.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Wave House · Coconut Grove · Private First Look" />
-  <meta name="twitter:description" content="New construction at 66 Samana Drive, Coconut Grove. Join the private first-look list." />
-  <meta name="twitter:image" content="https://tayreennelson.com/images/wave-house-rendering.jpg" />
+  <meta name="twitter:title" content="Wave House · Coconut Grove · Now Listed at $8,699,000" />
+  <meta name="twitter:description" content="New construction at 66 Samana Drive, Coconut Grove. 5 BD · 6.5 BA · 4,770 SF." />
+  <meta name="twitter:image" content="https://billskoogandnelson.com/images/wave-house-rendering.jpg" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-bn.png" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon-bn.png" />
@@ -123,12 +123,71 @@
     .wh-gallery figure:hover img { transform: scale(1.04); }
     .wh-section p.wh-caption { font-size: 11px; line-height: 1.7; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); max-width: none; margin: 26px 0 0; }
 
-    /* RSVP */
+    /* finishes grid */
+    .wh-finishes {
+      background: var(--paper);
+      border-top: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+      padding: clamp(66px, 9vh, 104px) clamp(20px, 4vw, 56px);
+    }
+    .wh-finishes-inner { max-width: var(--content-max); margin: 0 auto; }
+    .wh-finishes-inner .wh-rule { color: var(--ocean); border-bottom-color: var(--line); }
+    .wh-finishes-inner h2 { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.12; color: var(--ink); font-weight: 300; margin: 0 0 44px; }
+    .wh-finishes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+    }
+    .wh-finish-card {
+      background: var(--ivory);
+      padding: 36px 32px;
+    }
+    .wh-finish-card .fc-room {
+      font-size: 10.5px; font-weight: 500; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: var(--ocean); margin-bottom: 16px;
+    }
+    .wh-finish-card h3 {
+      font-size: clamp(18px, 1.8vw, 24px); font-weight: 300; color: var(--ink);
+      line-height: 1.2; margin: 0 0 20px;
+    }
+    .wh-finish-card ul {
+      list-style: none; padding: 0; margin: 0;
+    }
+    .wh-finish-card ul li {
+      font-size: 14.5px; line-height: 1.65; color: var(--muted);
+      font-weight: 300; padding: 7px 0; border-bottom: 1px solid var(--line-soft);
+    }
+    .wh-finish-card ul li:last-child { border-bottom: none; }
+
+    /* appliance callout */
+    .wh-appliance {
+      background: var(--ocean-ink);
+      padding: clamp(44px, 6vh, 66px) clamp(20px, 4vw, 56px);
+    }
+    .wh-appliance-inner {
+      max-width: var(--content-narrow); margin: 0 auto;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px;
+    }
+    .wh-appliance-text .wh-rule { color: rgba(255,255,255,0.72); border-bottom-color: rgba(255,255,255,0.18); }
+    .wh-appliance-text h3 { font-size: clamp(22px, 2.4vw, 32px); font-weight: 300; color: #fff; margin: 0 0 12px; }
+    .wh-appliance-text p { font-size: 15.5px; line-height: 1.72; color: rgba(255,255,255,0.78); font-weight: 300; margin: 0; max-width: 520px; }
+
+    /* RSVP / Sips & Scoops */
     .wh-rsvp { background: var(--ocean-ink); color: #fff; padding: clamp(66px, 9vh, 110px) clamp(20px, 4vw, 56px); }
     .wh-rsvp-inner { max-width: 780px; margin: 0 auto; }
     .wh-rsvp .wh-rule { color: rgba(255,255,255,0.72); border-bottom-color: rgba(255,255,255,0.18); }
     .wh-rsvp h2 { color: #fff; font-size: clamp(30px, 3.6vw, 50px); font-weight: 300; line-height: 1.1; margin: 0 0 22px; }
     .wh-rsvp p { color: rgba(255,255,255,0.8); font-size: 16.5px; line-height: 1.78; font-weight: 300; max-width: 640px; }
+    .wh-event-details {
+      display: flex; flex-wrap: wrap; gap: 28px; margin: 32px 0 44px;
+    }
+    .wh-event-detail .ed-k {
+      font-size: 10.5px; font-weight: 500; text-transform: uppercase;
+      letter-spacing: var(--eyebrow-tracked); color: rgba(255,255,255,0.56); margin-bottom: 8px;
+    }
+    .wh-event-detail .ed-v {
+      font-size: 17px; color: #fff; font-weight: 300; line-height: 1.4;
+    }
     .wh-form { margin-top: 44px; }
     .wh-form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
     .wh-field-full { grid-column: 1 / -1; }
@@ -185,6 +244,7 @@
     @media (max-width: 640px) {
       .wh-hero { min-height: 78vh; }
       .wh-hero-cta .wh-btn { width: 100%; text-align: center; }
+      .wh-appliance-inner { flex-direction: column; }
     }
   </style>
 <!-- structured data: Billskoog & Nelson -->
@@ -264,21 +324,26 @@
       "@id": "https://billskoogandnelson.com/wave-house/#residence",
       "name": "Wave House",
       "url": "https://billskoogandnelson.com/wave-house/",
-      "description": "A ground-up new-construction residence at 66 Samana Drive in Coconut Grove, in its final stages of construction.",
+      "description": "A new-construction residence at 66 Samana Drive in Coconut Grove. 5 bedrooms, 6.5 baths, 4,770 SF of living space on a 9,664 SF lot. Listed at $8,699,000.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "66 Samana Drive",
-        "addressLocality": "Miami",
+        "addressLocality": "Coconut Grove",
         "addressRegion": "FL",
         "postalCode": "33133",
         "addressCountry": "US"
       },
       "numberOfBedrooms": 5,
-      "numberOfFullBathrooms": 7,
+      "numberOfFullBathrooms": 6,
       "floorSize": {
         "@type": "QuantitativeValue",
-        "value": 4747,
+        "value": 4770,
         "unitCode": "FTK"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "8699000",
+        "priceCurrency": "USD"
       }
     },
     {
@@ -286,7 +351,7 @@
       "@id": "https://billskoogandnelson.com/wave-house/#webpage",
       "url": "https://billskoogandnelson.com/wave-house/",
       "name": "Wave House — 66 Samana Drive, Coconut Grove",
-      "description": "A new-construction residence at 66 Samana Drive in Coconut Grove, entering its final stages.",
+      "description": "New construction at 66 Samana Drive in Coconut Grove. 5 BD · 6.5 BA · 4,770 SF. Listed at $8,699,000.",
       "about": {
         "@id": "https://billskoogandnelson.com/#organization"
       },
@@ -357,16 +422,16 @@
 
     <section class="wh-hero">
       <div class="wh-hero-inner">
-        <p class="wh-eyebrow">Coming Soon · Coconut Grove</p>
+        <p class="wh-eyebrow">Now Listed · $8,699,000 · Coconut Grove</p>
         <h1 class="wh-logo"><img src="/images/wave-house-logo.png" alt="Wave House" width="1208" height="272" /></h1>
-        <p class="wh-address">66 Samana Drive · Coconut Grove</p>
+        <p class="wh-address">66 Samana Drive · Coconut Grove, FL 33133</p>
         <p class="wh-hero-lede">
-          A new-construction residence entering its final stages — and a private First Look
-          for a small group of buyers and advisors before it reaches the open market.
+          Wave House is now on the market. Five bedrooms, 6.5 baths, and 4,770 SF of sculptural
+          new construction in Coconut Grove&rsquo;s Bay Heights — ready to tour.
         </p>
         <div class="wh-hero-cta">
-          <a href="#rsvp" class="wh-btn">Join the First-Look List</a>
-          <a href="/new-construction/" class="wh-btn wh-btn-ghost">About the Partnership</a>
+          <a href="https://www.compass.com/homedetails/66-Samana-Dr-Coconut-Grove-FL-33133/1CAO29_pid/" target="_blank" rel="noopener noreferrer" class="wh-btn">View on Compass</a>
+          <a href="#rsvp" class="wh-btn wh-btn-ghost">Schedule a Tour</a>
         </div>
       </div>
     </section>
@@ -375,23 +440,23 @@
       <div class="wh-status-inner">
         <div class="wh-stat">
           <p class="k">Residence</p>
-          <p class="v">5 BD · 7 BA · 4,747 SF</p>
+          <p class="v">5 BD · 6.5 BA · 4,770 SF</p>
         </div>
         <div class="wh-stat">
           <p class="k">Lot</p>
-          <p class="v">0.22 Acres</p>
+          <p class="v">9,664 SF</p>
         </div>
         <div class="wh-stat">
-          <p class="k">Status</p>
-          <p class="v">Final stages of construction</p>
+          <p class="k">List Price</p>
+          <p class="v">$8,699,000</p>
         </div>
         <div class="wh-stat">
-          <p class="k">Anticipated Completion</p>
-          <p class="v">October / November 2026</p>
+          <p class="k">Completion</p>
+          <p class="v">2026</p>
         </div>
         <div class="wh-stat">
-          <p class="k">First Look</p>
-          <p class="v">Early October · Private list</p>
+          <p class="k">Listed On</p>
+          <p class="v">Compass</p>
         </div>
       </div>
     </section>
@@ -427,13 +492,111 @@
       <p class="wh-caption">Staged and photographed on site · September 2026 · Final finishes in progress</p>
     </section>
 
+    <!-- Materials & Finishes -->
+    <section class="wh-finishes">
+      <div class="wh-finishes-inner">
+        <span class="wh-rule">Materials &amp; Finishes</span>
+        <h2>Specified without compromise.</h2>
+        <div class="wh-finishes-grid">
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Kitchen</p>
+            <h3>Pedini Italia · Velvet Collection</h3>
+            <ul>
+              <li>Matte lacquer cabinetry by Pedini Italia</li>
+              <li>Honed Calacatta Gold marble countertops &amp; backsplash</li>
+              <li>Waterfall island with book-matched stone</li>
+              <li>Integrated handles and push-to-open hardware</li>
+              <li>Under-cabinet LED lighting throughout</li>
+            </ul>
+          </div>
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Summer Kitchen</p>
+            <h3>Pedini Italia · Outdoor Edition</h3>
+            <ul>
+              <li>Marine-grade lacquer cabinetry by Pedini Italia</li>
+              <li>Porcelain stone countertops — UV and weather resistant</li>
+              <li>Built-in grill station with dedicated exhaust</li>
+              <li>Outdoor-rated sink and faucet package</li>
+              <li>Flush-mount LED task lighting</li>
+            </ul>
+          </div>
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Master Bathroom</p>
+            <h3>Floor-to-Ceiling Stone</h3>
+            <ul>
+              <li>Honed Statuario marble — full-slab wall panels</li>
+              <li>Freestanding soaking tub with stone deck surround</li>
+              <li>Frameless glass rain shower with linear drain</li>
+              <li>Dual floating vanities with backlit mirrors</li>
+              <li>Radiant heated floors</li>
+            </ul>
+          </div>
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Master Closet</p>
+            <h3>Pedini Italia · Walk-In Suite</h3>
+            <ul>
+              <li>Custom built-ins by Pedini Italia — matte finish</li>
+              <li>Island with quartz top and velvet-lined jewelry drawers</li>
+              <li>Full-height mirror panels with integrated lighting</li>
+              <li>Double-hang and long-hang zones with cedar lining</li>
+              <li>Motion-activated LED rail system</li>
+            </ul>
+          </div>
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Secondary Bathrooms</p>
+            <h3>Coordinated Stone &amp; Tile</h3>
+            <ul>
+              <li>Large-format porcelain tile — floor and feature wall</li>
+              <li>Quartz countertops with undermount sinks</li>
+              <li>Frameless glass shower enclosures</li>
+              <li>Wall-mounted vanities with soft-close cabinetry</li>
+              <li>Designer fixture package throughout</li>
+            </ul>
+          </div>
+
+          <div class="wh-finish-card">
+            <p class="fc-room">Pantry &amp; Laundry</p>
+            <h3>Pedini Italia · Utility Collection</h3>
+            <ul>
+              <li>Floor-to-ceiling pantry cabinetry by Pedini Italia</li>
+              <li>Quartz countertop with prep sink</li>
+              <li>Built-in appliance garage with rollup door</li>
+              <li>Side-by-side washer/dryer with custom surround cabinetry</li>
+              <li>Porcelain tile flooring — easy-clean finish</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Appliance & Plumbing callout -->
+    <section class="wh-appliance">
+      <div class="wh-appliance-inner">
+        <div class="wh-appliance-text">
+          <span class="wh-rule">Appliance &amp; Plumbing Package</span>
+          <h3>Full specs available by request.</h3>
+          <p>
+            The complete appliance and plumbing fixture schedule — brands, model numbers, and finishes —
+            is available to qualified buyers and their representatives. Reach out and we will send it over.
+          </p>
+        </div>
+        <a href="mailto:Tayreen@RileySmithGroup.com?subject=Wave%20House%20%E2%80%94%20Appliance%20%26%20Plumbing%20Package&body=Hi%20Tayreen%2C%0A%0AI%27d%20like%20to%20receive%20the%20full%20appliance%20and%20plumbing%20specification%20for%20Wave%20House." class="wh-btn" style="white-space:nowrap; flex-shrink:0;">Request the Specs</a>
+      </div>
+    </section>
+
     <section class="wh-section" style="padding-top:0;">
       <span class="wh-rule">Project Team</span>
       <div class="wh-team">
         <div><p class="k">Architect</p><p class="v"><a href="https://www.ginardstudio.com" target="_blank" rel="noopener noreferrer">Ginard Studio</a></p></div>
         <div><p class="k">Contractor</p><p class="v"><a href="https://billskogconstruction.com" target="_blank" rel="noopener noreferrer">Billskog Construction</a></p></div>
         <div><p class="k">Developer</p><p class="v"><a href="https://urbanecapitalllc.com" target="_blank" rel="noopener noreferrer">Urbane Capital LLC</a></p></div>
-        <div><p class="k">Representation</p><p class="v"><a href="/new-construction/">Billskoog &amp; Nelson</a><br /><a href="https://rileysmithgroup.com" target="_blank" rel="noopener noreferrer">Riley Smith Group at Compass</a></p></div>
+        <div><p class="k">Representation</p><p class="v"><a href="/new-construction/">Billskoog &amp; Nelson</a><br />Real Estate Advisors<br /><a href="https://rileysmithgroup.com" target="_blank" rel="noopener noreferrer">Riley Smith Group at Compass</a></p></div>
       </div>
 
       <p class="wh-follow">
@@ -443,27 +606,38 @@
       </p>
     </section>
 
+    <!-- Sips & Scoops / RSVP -->
     <section class="wh-rsvp" id="rsvp">
       <div class="wh-rsvp-inner">
-        <span class="wh-rule">Private First Look</span>
-        <h2>Ask to see it first.</h2>
+        <span class="wh-rule">You&rsquo;re Invited</span>
+        <h2>Sips &amp; Scoops at Wave House.</h2>
         <p>
-          We are keeping a private list. Wave House will be shown to that list before it is
-          publicly marketed — and if you are on it, you hear from us directly rather than finding
-          it on a portal. We expect to be walking it in early October and will reach out with the
-          date once it is set.
+          Join us for a relaxed open house at 66 Samana Drive — sips, ice cream, and a walk through
+          one of Coconut Grove&rsquo;s most anticipated new residences. Come see the finishes, the views,
+          and the space for yourself.
         </p>
-        <p>
-          There is no obligation in being on the list, and no automated follow-up. Add your name
-          and we will tell you when there is something worth seeing.
-        </p>
+
+        <div class="wh-event-details">
+          <div class="wh-event-detail">
+            <p class="ed-k">Date</p>
+            <p class="ed-v">Saturday, November 15, 2026</p>
+          </div>
+          <div class="wh-event-detail">
+            <p class="ed-k">Time</p>
+            <p class="ed-v">12:00 – 3:00 PM</p>
+          </div>
+          <div class="wh-event-detail">
+            <p class="ed-k">Location</p>
+            <p class="ed-v">66 Samana Drive<br />Coconut Grove, FL 33133</p>
+          </div>
+        </div>
 
         <form class="wh-form"
               action="https://formspree.io/f/xwvyjjek"
               method="POST"
-              aria-label="Join the private first-look list for Wave House">
-          <input type="hidden" name="_subject" value="Wave House — First Look list request" />
-          <input type="hidden" name="source" value="tayreennelson.com/wave-house" />
+              aria-label="RSVP for Sips &amp; Scoops at Wave House">
+          <input type="hidden" name="_subject" value="Wave House — Sips &amp; Scoops RSVP" />
+          <input type="hidden" name="source" value="billskoogandnelson.com/wave-house" />
 
           <div class="wh-form-grid">
             <div>
@@ -488,24 +662,15 @@
               </select>
             </div>
             <div class="wh-field-full">
-              <label for="rsvp-timing">Timing</label>
-              <select id="rsvp-timing" name="timing">
-                <option>Actively looking now</option>
-                <option>Within the next 6 months</option>
-                <option>Within the next 12 months</option>
-                <option>Watching the Grove market</option>
-              </select>
-            </div>
-            <div class="wh-field-full">
               <label for="rsvp-message">Anything we should know (optional)</label>
-              <textarea id="rsvp-message" name="message" rows="4" placeholder="What you're looking for, or who you represent."></textarea>
+              <textarea id="rsvp-message" name="message" rows="3" placeholder="Number of guests, questions about the home, or who you represent."></textarea>
             </div>
           </div>
 
-          <button type="submit" class="wh-submit">Add Me to the List</button>
+          <button type="submit" class="wh-submit">RSVP · Secure Your Spot</button>
           <p class="wh-form-note">
-            Requests are reviewed individually. Your information is kept private, is never sold or
-            shared, and is used only to reach you about this residence.
+            RSVPs are reviewed individually. Your information is kept private, is never sold or
+            shared, and is used only to reach you about this event and this residence.
           </p>
         </form>
       </div>
